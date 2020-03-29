@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Player_Movement : MonoBehaviour
 {
-    // Start is called before the first frame update
     public float speed = 0.5f;
     public Rigidbody2D rb;
     Vector2 movement;
@@ -15,11 +14,11 @@ public class Player_Movement : MonoBehaviour
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
-        animator.SetFloat("Horizontal", movement.x);
+        animator.SetFloat("Horizontal", movement.x); //necessary for blend tree in Animator
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("speed", movement.sqrMagnitude);
         if (movement.x < 0) animator.SetBool("isRight", false);
-        else if(movement.x >0) animator.SetBool("isRight", true);
+        else if(movement.x >0) animator.SetBool("isRight", true); //for left persistence in idle position
     }
 
     private void FixedUpdate()
