@@ -1,0 +1,634 @@
+fileFormatVersion: 2
+guid: f3c8d1a865360154d9ffee733f27d882
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2924891399174594300
+    second: boar-walk-left_1
+  - first:
+      213: -2164755516073933286
+    second: boar-walk-left_2
+  - first:
+      213: 4878328180195797451
+    second: boar-walk-left_3
+  - first:
+      213: -1877080516304681604
+    second: boar-walk-left_4
+  - first:
+      213: 3828788625154587857
+    second: boar-walk-left_5
+  - first:
+      213: -2021270863555123433
+    second: boar-idle-left_1
+  - first:
+      213: -3629570026674132634
+    second: boar-idle-left_2
+  - first:
+      213: 3215079422736014013
+    second: boar-idle-left_3
+  - first:
+      213: -7517987238387224219
+    second: boar-idle-left_4
+  - first:
+      213: -8825900631037489252
+    second: boar-idle-left_5
+  - first:
+      213: 5377245870039645772
+    second: boar-idle-left_6
+  - first:
+      213: 5341803360496473460
+    second: boar-left_11
+  - first:
+      213: -6702643770846793707
+    second: boar-left_12
+  - first:
+      213: 5078719677814455918
+    second: boar-left_13
+  - first:
+      213: -2623699129777574070
+    second: boar-left_14
+  - first:
+      213: -8876261909321085944
+    second: boar-left_15
+  - first:
+      213: -746672993815161335
+    second: boar-left_16
+  - first:
+      213: -166128922611704815
+    second: boar-left_17
+  - first:
+      213: 8055860356909629325
+    second: boar-left_18
+  - first:
+      213: -8036300709057827515
+    second: boar-left_19
+  - first:
+      213: -1783229359609162197
+    second: boar-left_20
+  - first:
+      213: 6482076026641973994
+    second: boar-left_21
+  - first:
+      213: -6563677152226781495
+    second: boar-left_22
+  - first:
+      213: -151720974929487310
+    second: boar-left_23
+  - first:
+      213: 922248609830117015
+    second: boar-left_24
+  - first:
+      213: 739794070904807422
+    second: boar-left_25
+  - first:
+      213: -3601011266479557770
+    second: boar-left_26
+  - first:
+      213: 873076284656280601
+    second: boar-left_27
+  - first:
+      213: 8819849606055999192
+    second: boar-left_28
+  - first:
+      213: -1711374265285653044
+    second: boar-left_29
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boar-walk-left_1
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 290
+        width: 120
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4016a99e4c2b867d0800000000000000
+      internalID: -2924891399174594300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boar-walk-left_2
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 290
+        width: 118
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1688d6d35e35f1e0800000000000000
+      internalID: -2164755516073933286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boar-walk-left_3
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 290
+        width: 116
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc9295622ad43b340800000000000000
+      internalID: 4878328180195797451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boar-walk-left_4
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 290
+        width: 119
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c754ad2373543f5e0800000000000000
+      internalID: -1877080516304681604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boar-walk-left_5
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 290
+        width: 119
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dc356208f6922530800000000000000
+      internalID: 3828788625154587857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boar-idle-left_1
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 200
+        width: 120
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71723f6dbd003f3e0800000000000000
+      internalID: -2021270863555123433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boar-idle-left_2
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 200
+        width: 120
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 669eea08a4d21adc0800000000000000
+      internalID: -3629570026674132634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boar-idle-left_3
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 200
+        width: 119
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dba19d463b14e9c20800000000000000
+      internalID: 3215079422736014013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boar-idle-left_4
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 200
+        width: 117
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 561720e407ebaa790800000000000000
+      internalID: -7517987238387224219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boar-idle-left_5
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 200
+        width: 119
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9f4d10432a148580800000000000000
+      internalID: -8825900631037489252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boar-idle-left_6
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 200
+        width: 119
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4e36a101a0df9a40800000000000000
+      internalID: 5377245870039645772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boar-left_11
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 129
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4755162bad5e12a40800000000000000
+      internalID: 5341803360496473460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boar-left_12
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 5
+        width: 117
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51031b6a00d6bf2a0800000000000000
+      internalID: -6702643770846793707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boar-left_13
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 5
+        width: 117
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6ebae583ac3b7640800000000000000
+      internalID: 5078719677814455918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boar-left_14
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 5
+        width: 117
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4f2b1cda8fb69bd0800000000000000
+      internalID: -2623699129777574070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boar-left_15
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 5
+        width: 117
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80c069962de21d480800000000000000
+      internalID: -8876261909321085944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boar-left_16
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 5
+        width: 117
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90615404ed843a5f0800000000000000
+      internalID: -746672993815161335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boar-left_17
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 3
+        width: 118
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11c9fc400aac1bdf0800000000000000
+      internalID: -166128922611704815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boar-left_18
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 4
+        width: 118
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8fffb5105a2ccf60800000000000000
+      internalID: 8055860356909629325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boar-left_19
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 3
+        width: 118
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54d63605513597090800000000000000
+      internalID: -8036300709057827515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boar-left_20
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 2
+        width: 244
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b26d27b6852b047e0800000000000000
+      internalID: -1783229359609162197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
