@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Boar_Movement : MonoBehaviour
 {
-    public float speed = 0.5f;
+    public float speed;
     public Rigidbody2D rb;
-    public Vector2 movement;
+    private Vector2 movement;
     public Animator animator;
 
     // Update is called once per frame
@@ -24,6 +24,6 @@ public class Boar_Movement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.MovePosition(rb.position + 4 * movement * speed * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
     }
 }
