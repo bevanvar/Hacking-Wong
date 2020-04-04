@@ -1,0 +1,1963 @@
+fileFormatVersion: 2
+guid: 74a6e45e4cdc4d84c83cf2ab6f264539
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7284581330675762822
+    second: Power Ranger_0
+  - first:
+      213: 3792650718387445105
+    second: Power Ranger_1
+  - first:
+      213: 5848476623324146671
+    second: Power Ranger_2
+  - first:
+      213: -4751816578845644991
+    second: Power Ranger_3
+  - first:
+      213: -6471798698999579014
+    second: Power Ranger_4
+  - first:
+      213: 1084854387652924330
+    second: Power Ranger_5
+  - first:
+      213: 2575595725122149915
+    second: Power Ranger_6
+  - first:
+      213: 584453772036839505
+    second: Power Ranger_7
+  - first:
+      213: -2283434833242910955
+    second: Power Ranger_8
+  - first:
+      213: 7175708260608394322
+    second: Power Ranger_9
+  - first:
+      213: -8443765312251372319
+    second: Power Ranger_10
+  - first:
+      213: -2408046061706242585
+    second: Power Ranger_11
+  - first:
+      213: -8202393711961854476
+    second: Power Ranger_12
+  - first:
+      213: -2226842939983364237
+    second: Power Ranger_13
+  - first:
+      213: 4827639901546869000
+    second: Power Ranger_14
+  - first:
+      213: 665753362887628221
+    second: Power Ranger_15
+  - first:
+      213: -138594458919862986
+    second: Power Ranger_16
+  - first:
+      213: -3499913651462961060
+    second: Power Ranger_17
+  - first:
+      213: 3721462045464867660
+    second: Power Ranger_18
+  - first:
+      213: -6445383447707901115
+    second: Power Ranger_19
+  - first:
+      213: -8628974491331763128
+    second: Power Ranger_20
+  - first:
+      213: 8960927073933250824
+    second: Power Ranger_21
+  - first:
+      213: 537686104604615260
+    second: Power Ranger_22
+  - first:
+      213: 3870871461290538195
+    second: Power Ranger_23
+  - first:
+      213: 8184475627415348378
+    second: Power Ranger_24
+  - first:
+      213: 9062521735415505043
+    second: Power Ranger_25
+  - first:
+      213: -3887712596949626208
+    second: Power Ranger_26
+  - first:
+      213: 1200819325463649898
+    second: Power Ranger_27
+  - first:
+      213: -6885722232223613112
+    second: Power Ranger_28
+  - first:
+      213: -9025537893332410064
+    second: Power Ranger_29
+  - first:
+      213: -5566110364753401086
+    second: Power Ranger_30
+  - first:
+      213: 4603228017998487722
+    second: Power Ranger_31
+  - first:
+      213: -3919890852885858813
+    second: Power Ranger_32
+  - first:
+      213: 1716709002417255847
+    second: Power Ranger_33
+  - first:
+      213: -2114045226211253128
+    second: Power Ranger_34
+  - first:
+      213: 4244568075068543459
+    second: Power Ranger_35
+  - first:
+      213: 4490537254292779222
+    second: Power Ranger_36
+  - first:
+      213: -1300472533367508049
+    second: Power Ranger_37
+  - first:
+      213: 5875343588488174592
+    second: Power Ranger_38
+  - first:
+      213: -4123169410105189992
+    second: Power Ranger_39
+  - first:
+      213: -8094716449357608268
+    second: Power Ranger_40
+  - first:
+      213: 7538054125151669584
+    second: Power Ranger_41
+  - first:
+      213: -4298663943254434534
+    second: Power Ranger_42
+  - first:
+      213: 4087638275945317437
+    second: Power Ranger_43
+  - first:
+      213: 4500073859546488883
+    second: Power Ranger_44
+  - first:
+      213: 5876488152188781896
+    second: Power Ranger_45
+  - first:
+      213: -951396681946191776
+    second: Power Ranger_46
+  - first:
+      213: -7369394855720034635
+    second: Power Ranger_47
+  - first:
+      213: 5041130532908876078
+    second: Power Ranger_48
+  - first:
+      213: -6138254901866522698
+    second: Power Ranger_49
+  - first:
+      213: 3015408335628029254
+    second: Power Ranger_50
+  - first:
+      213: 5904056675128050566
+    second: Power Ranger_51
+  - first:
+      213: -3657563329973270000
+    second: Power Ranger_52
+  - first:
+      213: 4591666118717640269
+    second: Power Ranger_53
+  - first:
+      213: 6330990287227709533
+    second: Power Ranger_54
+  - first:
+      213: -1725360004791659373
+    second: Power Ranger_55
+  - first:
+      213: 818988477974478946
+    second: Power Ranger_56
+  - first:
+      213: -3772661499377951902
+    second: Power Ranger_57
+  - first:
+      213: 4552649009509092368
+    second: Power Ranger_58
+  - first:
+      213: 7444035623996133991
+    second: Power Ranger_59
+  - first:
+      213: 6823980081203150361
+    second: Power Ranger_60
+  - first:
+      213: 7182878829595361718
+    second: Power Ranger_61
+  - first:
+      213: -923591635455279695
+    second: Power Ranger_62
+  - first:
+      213: 2488076172376961838
+    second: Power Ranger_63
+  - first:
+      213: -224141561105582674
+    second: Power Ranger_64
+  - first:
+      213: -1136894412557954056
+    second: Power Ranger_65
+  - first:
+      213: -5782365270212774365
+    second: Power Ranger_66
+  - first:
+      213: 6813918618177193169
+    second: Power Ranger_67
+  - first:
+      213: 5408922048890817623
+    second: Power Ranger_68
+  - first:
+      213: 7989592747455277349
+    second: Power Ranger_69
+  - first:
+      213: 18169690993125826
+    second: Power Ranger_70
+  - first:
+      213: 9143862449829920171
+    second: Power Ranger_71
+  - first:
+      213: -7536255700513890805
+    second: Power Ranger_72
+  - first:
+      213: 2331791718804571484
+    second: Power Ranger_73
+  - first:
+      213: 3578583054632969928
+    second: Power Ranger_74
+  - first:
+      213: 6894710302366056718
+    second: Power Ranger_75
+  - first:
+      213: -5000480660553044961
+    second: Power Ranger_76
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 12
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Power Ranger_0
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 520
+        width: 81
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a79f0a700e7f7ea90800000000000000
+      internalID: -7284581330675762822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_1
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 520
+        width: 80
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17d1d9aebb332a430800000000000000
+      internalID: 3792650718387445105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_2
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 520
+        width: 81
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feb696a9086f92150800000000000000
+      internalID: 5848476623324146671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_3
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 519
+        width: 102
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 147e71c6ff72e0eb0800000000000000
+      internalID: -4751816578845644991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_4
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 441
+        width: 83
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7e7b405f5d8f26a0800000000000000
+      internalID: -6471798698999579014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 441
+        width: 85
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa39319515d2e0f00800000000000000
+      internalID: 1084854387652924330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_6
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 440
+        width: 89
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1e9be87aaa5eb320800000000000000
+      internalID: 2575595725122149915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_7
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 439
+        width: 80
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15894edeb956c1800800000000000000
+      internalID: 584453772036839505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_8
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 437
+        width: 80
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51f8dc80e1c9f40e0800000000000000
+      internalID: -2283434833242910955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_9
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 360
+        width: 82
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 254466df4ac359360800000000000000
+      internalID: 7175708260608394322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_10
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 361
+        width: 86
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ecdd7c7f28b1da80800000000000000
+      internalID: -8443765312251372319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_11
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 362
+        width: 93
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e598318dd6e49ed0800000000000000
+      internalID: -2408046061706242585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_12
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 360
+        width: 88
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fdad9a806e3b2e80800000000000000
+      internalID: -8202393711961854476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_13
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 360
+        width: 88
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37f74b7f42aa811e0800000000000000
+      internalID: -2226842939983364237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_14
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 290
+        width: 126
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 801f33b99e83ff240800000000000000
+      internalID: 4827639901546869000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_15
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 288
+        width: 117
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db550fef72b3d3900800000000000000
+      internalID: 665753362887628221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_16
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 290
+        width: 136
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63d7e3ce21d931ef0800000000000000
+      internalID: -138594458919862986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_17
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 290
+        width: 131
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c58820cc31fcd6fc0800000000000000
+      internalID: -3499913651462961060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_18
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 212
+        width: 109
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c433801630a45a330800000000000000
+      internalID: 3721462045464867660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_19
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 209
+        width: 109
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 543203647e56d86a0800000000000000
+      internalID: -6445383447707901115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_20
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 209
+        width: 109
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 844634c1b69bf3880800000000000000
+      internalID: -8628974491331763128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_21
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 207
+        width: 109
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 801d8fb52bb9b5c70800000000000000
+      internalID: 8960927073933250824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_22
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 116
+        width: 83
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c522f91d9ae367700800000000000000
+      internalID: 537686104604615260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_23
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 121
+        width: 106
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d47b65d51918b530800000000000000
+      internalID: 3870871461290538195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_24
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 118
+        width: 111
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a942fec4839159170800000000000000
+      internalID: 8184475627415348378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_25
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 112
+        width: 98
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 390a2b8c08b84cd70800000000000000
+      internalID: 9062521735415505043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_26
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 114
+        width: 81
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a29106bdf11c0ac0800000000000000
+      internalID: -3887712596949626208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_27
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 115
+        width: 82
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e5fa570da2aa010800000000000000
+      internalID: 1200819325463649898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_28
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 96
+        width: 37
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84f3d46ac100170a0800000000000000
+      internalID: -6885722232223613112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_29
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 98
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0312819fa19deb280800000000000000
+      internalID: -9025537893332410064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_30
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 96
+        width: 29
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20be0402d1431c2b0800000000000000
+      internalID: -5566110364753401086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_31
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 79
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa0ece05e73f1ef30800000000000000
+      internalID: 4603228017998487722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_32
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 70
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3067f6ba900c999c0800000000000000
+      internalID: -3919890852885858813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_33
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 76
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a5bbcffdb9f2d710800000000000000
+      internalID: 1716709002417255847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_34
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 68
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8746194411769a2e0800000000000000
+      internalID: -2114045226211253128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_35
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 63
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e19c63fc2cb7ea30800000000000000
+      internalID: 4244568075068543459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_36
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 80
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d077c447d7915e30800000000000000
+      internalID: 4490537254292779222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_37
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 84
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa33a700f1bc3fde0800000000000000
+      internalID: -1300472533367508049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_38
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 76
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00cd4356dd9698150800000000000000
+      internalID: 5875343588488174592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_39
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 73
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8995ce9544f87c6c0800000000000000
+      internalID: -4123169410105189992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_40
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 79
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ba4786e64ac9af80800000000000000
+      internalID: -8094716449357608268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_41
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 72
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05d455bd94c8c9860800000000000000
+      internalID: 7538054125151669584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_42
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 71
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1d1a8d3be31854c0800000000000000
+      internalID: -4298663943254434534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_43
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 73
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d34c200da553ab830800000000000000
+      internalID: 4087638275945317437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_44
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 66
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3302a453559737e30800000000000000
+      internalID: 4500073859546488883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_45
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 66
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8450106e6da7d8150800000000000000
+      internalID: 5876488152188781896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_46
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 66
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 068ac1c22c5fbc2f0800000000000000
+      internalID: -951396681946191776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_47
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 67
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5be57376c66aab990800000000000000
+      internalID: -7369394855720034635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_48
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 29
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e21c868b281b5f540800000000000000
+      internalID: 5041130532908876078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_49
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 31
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b7127940b980daa0800000000000000
+      internalID: -6138254901866522698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_50
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 34
+        width: 31
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d4cd9a7e1e8d920800000000000000
+      internalID: 3015408335628029254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_51
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 37
+        width: 38
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68308c6d34c6fe150800000000000000
+      internalID: 5904056675128050566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_52
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 39
+        width: 39
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01ac27da789bd3dc0800000000000000
+      internalID: -3657563329973270000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_53
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 37
+        width: 37
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4e8c5dd100e8bf30800000000000000
+      internalID: 4591666118717640269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_54
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 34
+        width: 31
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d58e7aa8f123cd750800000000000000
+      internalID: 6330990287227709533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_55
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 31
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3941abc873a4e08e0800000000000000
+      internalID: -1725360004791659373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_56
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2608ec87ea1ad5b00800000000000000
+      internalID: 818988477974478946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_57
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 25
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26bd8cfca50d4abc0800000000000000
+      internalID: -3772661499377951902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_58
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 5
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01cc2d637224e2f30800000000000000
+      internalID: 4552649009509092368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_59
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 4
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76294a7b5f68e4760800000000000000
+      internalID: 7444035623996133991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_60
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 3
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91e74769ab5a3be50800000000000000
+      internalID: 6823980081203150361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_61
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 2
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b184be2d36bea360800000000000000
+      internalID: 7182878829595361718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_62
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 3
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bd7a2b0d4ebe23f0800000000000000
+      internalID: -923591635455279695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_63
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 3
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2374aca81c678220800000000000000
+      internalID: 2488076172376961838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_64
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 4
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea576ee0070b3ecf0800000000000000
+      internalID: -224141561105582674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_65
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 5
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f35b582e80f830f0800000000000000
+      internalID: -1136894412557954056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_66
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 6
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 326796b4c69e0cfa0800000000000000
+      internalID: -5782365270212774365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_67
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 6
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d44fdca1e6ef8e50800000000000000
+      internalID: 6813918618177193169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_68
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 5
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c4aed12f9501b40800000000000000
+      internalID: 5408922048890817623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_69
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 5
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 529eb1ce54cb0ee60800000000000000
+      internalID: 7989592747455277349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_70
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 3
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c9e259dc3d804000800000000000000
+      internalID: 18169690993125826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_71
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 4
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bad352da37685ee70800000000000000
+      internalID: 9143862449829920171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_72
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 4
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e5b528e57d96790800000000000000
+      internalID: -7536255700513890805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_73
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 5
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c554b81c6303c5020800000000000000
+      internalID: 2331791718804571484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_74
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 58
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c661aaf35ea9a130800000000000000
+      internalID: 3578583054632969928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_75
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 66
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0141c18d7eeeaf50800000000000000
+      internalID: 6894710302366056718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Ranger_76
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 62
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1c66893559ba9ab0800000000000000
+      internalID: -5000480660553044961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
