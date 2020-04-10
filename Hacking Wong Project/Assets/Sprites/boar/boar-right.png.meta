@@ -37,34 +37,37 @@ TextureImporter:
     second: boar-idle-right_6
   - first:
       213: -1459228725800492530
-    second: boar-right_11
+    second: boar-right-die_4
   - first:
       213: 5545103471031993318
-    second: boar-right_12
+    second: boar-right-die_3
   - first:
       213: -715396145436241701
-    second: boar-right_13
+    second: boar-right-die_2
   - first:
       213: 6502346707963037596
-    second: boar-right_14
+    second: boar-right-die_1
   - first:
       213: 6987472969592188725
-    second: boar-right_15
+    second: boar-hurt-right_6
   - first:
       213: -3521053558073191772
-    second: boar-right_16
+    second: boar-hurt-right_5
   - first:
       213: -6493078281650460983
-    second: boar-right_17
+    second: boar-hurt-right_4
   - first:
       213: 5151875711157490650
-    second: boar-right_18
+    second: boar-hurt-right_3
   - first:
       213: 7575026367006481703
-    second: boar-right_19
+    second: boar-hurt-right_1
   - first:
       213: 2902987178899693326
-    second: boar-right_20
+    second: boar-hurt-right_2
+  - first:
+      213: 1017038099571524159
+    second: boar-right-die_5
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -392,13 +395,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boar-right_11
+      name: boar-right-die_4
       rect:
         serializedVersion: 2
-        x: 2
+        x: 125
         y: 2
-        width: 244
-        height: 91
+        width: 121
+        height: 71
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -413,7 +416,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boar-right_12
+      name: boar-right-die_3
       rect:
         serializedVersion: 2
         x: 251
@@ -434,7 +437,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boar-right_13
+      name: boar-right-die_2
       rect:
         serializedVersion: 2
         x: 374
@@ -455,7 +458,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boar-right_14
+      name: boar-right-die_1
       rect:
         serializedVersion: 2
         x: 499
@@ -476,7 +479,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boar-right_15
+      name: boar-hurt-right_6
       rect:
         serializedVersion: 2
         x: 621
@@ -497,7 +500,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boar-right_16
+      name: boar-hurt-right_5
       rect:
         serializedVersion: 2
         x: 747
@@ -518,13 +521,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boar-right_17
+      name: boar-hurt-right_4
       rect:
         serializedVersion: 2
-        x: 873
-        y: 5
-        width: 117
-        height: 118
+        x: 874
+        y: 6
+        width: 116
+        height: 82
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -539,7 +542,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boar-right_18
+      name: boar-hurt-right_3
       rect:
         serializedVersion: 2
         x: 1013
@@ -560,16 +563,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boar-right_19
+      name: boar-hurt-right_1
       rect:
         serializedVersion: 2
-        x: 1149
-        y: 2
-        width: 129
-        height: 187
+        x: 1147
+        y: 99
+        width: 122
+        height: 90
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 1, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -581,11 +584,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boar-right_20
+      name: boar-hurt-right_2
       rect:
         serializedVersion: 2
-        x: 1150
-        y: 5
+        x: 1149
+        y: 4
         width: 117
         height: 87
       alignment: 0
@@ -597,6 +600,27 @@ TextureImporter:
       bones: []
       spriteID: e0f54d1657b794820800000000000000
       internalID: 2902987178899693326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boar-right-die_5
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 5
+        width: 105
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f32cff753ce3d1e00800000000000000
+      internalID: 1017038099571524159
       vertices: []
       indices: 
       edges: []
