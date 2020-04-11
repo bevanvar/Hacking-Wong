@@ -8,7 +8,7 @@ public class Dragon_Movement : MonoBehaviour
     public Transform target;
     public float nextWaypointDistance = 3f;
     Path path;
-    int currentWaypoint;
+    private int currentWaypoint;
     Seeker seeker;
     public Animator anim;
     public float attackRange = 15f;
@@ -54,6 +54,13 @@ public class Dragon_Movement : MonoBehaviour
             case State.Shooting:
                 CancelInvoke();
                 Debug.Log("Currently Shooting");
+                if (target.position.x < rb.position.x)
+                {
+                    anim.SetBool("isRight", false);
+                } else if (target.position.x > rb.position.x)
+                {
+                    anim.SetBool("isRight", true);
+                }
                 if (Vector2.Distance(rb.position, target.position) > shootRange)
                 {
                     firstTimePath = true;
@@ -105,23 +112,27 @@ public class Dragon_Movement : MonoBehaviour
             return;
         }
 
-        Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
-        Vector2 force = direction * speed * Time.deltaTime;
-
-        rb.AddForce(force);
+        Debug.Log(currentWaypoint);
+        if (currentWaypoint > path.vectorPath.Count)
+        {
+            currentWaypoint = 0;
+        }
+        Vector2 movement = ((Vector2)path.vectorPath[currentWaypoint] - rb.position);
+        Vector2 direction = movement.normalized;
+        rb.MovePosition(direction * speed * Time.deltaTime + rb.position);
 
         float distance = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
         if (distance <= nextWaypointDistance)
         {
             currentWaypoint++;
         }
-        anim.SetFloat("Horizontal", rb.velocity.x);
-        anim.SetFloat("Vertical", rb.velocity.y);
-        anim.SetFloat("Speed", rb.velocity.sqrMagnitude);
-        if (rb.velocity.x > 0)
+        anim.SetFloat("Horizontal", movement.x);
+        anim.SetFloat("Vertical", movement.y);
+        anim.SetFloat("Speed", movement.sqrMagnitude);
+        if (movement.x > 0)
         {
             anim.SetBool("isRight", true);
-        } else if (rb.velocity.x < 0)
+        } else if (movement.x < 0)
         {
             anim.SetBool("isRight", false);
         }
