@@ -27,6 +27,7 @@ public class Dragon_Movement : MonoBehaviour
     {
         seeker = GetComponent<Seeker>();
         state = State.Idle;
+        InvokeRepeating("UpdatePath", 0f, 0.5f);
     }
 
     private void Update()
@@ -35,7 +36,6 @@ public class Dragon_Movement : MonoBehaviour
         {
             default:
             case State.Idle:
-                CancelInvoke();
                 if(Vector2.Distance(rb.position, target.position)< attackRange)
                 {
                     state = State.Chasing;
@@ -45,14 +45,12 @@ public class Dragon_Movement : MonoBehaviour
             case State.Chasing:
                 if (firstTimePath)
                 {
-                    InvokeRepeating("UpdatePath", 0f, 0.5f);
                     firstTimePath = false;
                     currentWaypoint = 0;
                 }
                 Pathfinding();
                 break;
             case State.Shooting:
-                CancelInvoke();
                 Debug.Log("Currently Shooting");
                 if (target.position.x < rb.position.x)
                 {
@@ -112,11 +110,11 @@ public class Dragon_Movement : MonoBehaviour
             return;
         }
 
-        Debug.Log(currentWaypoint);
-        if (currentWaypoint > path.vectorPath.Count)
-        {
-            currentWaypoint = 0;
-        }
+        //Debug.Log(currentWaypoint + " " + path.vectorPath.Count);
+        //if (currentWaypoint > path.vectorPath.Count)
+        //{
+        //    currentWaypoint = 0;
+        //}
         Vector2 movement = ((Vector2)path.vectorPath[currentWaypoint] - rb.position);
         Vector2 direction = movement.normalized;
         rb.MovePosition(direction * speed * Time.deltaTime + rb.position);
@@ -125,6 +123,10 @@ public class Dragon_Movement : MonoBehaviour
         if (distance <= nextWaypointDistance)
         {
             currentWaypoint++;
+            if (currentWaypoint == path.vectorPath.Count)
+            {
+                currentWaypoint = 0;
+            }
         }
         anim.SetFloat("Horizontal", movement.x);
         anim.SetFloat("Vertical", movement.y);
