@@ -141,7 +141,6 @@ MonoBehaviour:
   rb: {fileID: 9008559427334010611}
   speed: 4
   animator: {fileID: 9008559427334010612}
-  movement: {x: 0, y: 0}
 --- !u!61 &9008559426461274161
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -181,3 +180,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 50
+  anim: {fileID: 9008559427334010612}
+  deathAnimTimeInSeconds: 0.778

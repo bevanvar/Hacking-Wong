@@ -159,6 +159,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 40
+  anim: {fileID: 3254794655423422491}
+  deathAnimTimeInSeconds: 1.08
 --- !u!58 &2039218246
 CircleCollider2D:
   m_ObjectHideFlags: 0

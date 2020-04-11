@@ -128,6 +128,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 63538215, guid: 21964bb79eebd7141867aedaf79505da, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 1153342671}
+    - target: {fileID: 63538215, guid: 21964bb79eebd7141867aedaf79505da, type: 3}
+      propertyPath: deathAnimTime
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 63538215, guid: 21964bb79eebd7141867aedaf79505da, type: 3}
+      propertyPath: deathAnimTimeInMilliseconds
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 63538215, guid: 21964bb79eebd7141867aedaf79505da, type: 3}
+      propertyPath: deathAnimTimeInSeconds
+      value: 1.08
+      objectReference: {fileID: 0}
     - target: {fileID: 3254794655423422487, guid: 21964bb79eebd7141867aedaf79505da,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -315,6 +331,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8495491971243933094, guid: 6e6ec7937591eba418a58616b014ae49,
     type: 3}
   m_PrefabInstance: {fileID: 1493607389}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1153342671 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3254794655423422491, guid: 21964bb79eebd7141867aedaf79505da,
+    type: 3}
+  m_PrefabInstance: {fileID: 106174554}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1293214948
 GameObject:
@@ -4542,6 +4564,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 63538215, guid: 21964bb79eebd7141867aedaf79505da, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 2131174243}
+    - target: {fileID: 63538215, guid: 21964bb79eebd7141867aedaf79505da, type: 3}
+      propertyPath: deathAnimTimeInSeconds
+      value: 1.08
+      objectReference: {fileID: 0}
     - target: {fileID: 3254794655423422487, guid: 21964bb79eebd7141867aedaf79505da,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4609,3 +4639,9 @@ PrefabInstance:
       objectReference: {fileID: 979214456}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21964bb79eebd7141867aedaf79505da, type: 3}
+--- !u!95 &2131174243 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3254794655423422491, guid: 21964bb79eebd7141867aedaf79505da,
+    type: 3}
+  m_PrefabInstance: {fileID: 2039218244}
+  m_PrefabAsset: {fileID: 0}

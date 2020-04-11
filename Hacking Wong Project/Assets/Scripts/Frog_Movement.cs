@@ -8,7 +8,7 @@ public class Frog_Movement : MonoBehaviour
     public Rigidbody2D rb;
     public float speed;
     public Animator animator;
-    public Vector2 movement;
+    Vector2 movement;
 
     // Update is called once per frame
     void Update()
@@ -21,11 +21,11 @@ public class Frog_Movement : MonoBehaviour
         if (movement.x < 0) animator.SetBool("isRight", false);
         else if (movement.x > 0) animator.SetBool("isRight", true);
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            movement = Vector2.zero;
-            animator.SetTrigger("explode");
-        }
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    movement = Vector2.zero;
+        //    animator.SetTrigger("explode");
+        //}
     }
 
     private void FixedUpdate()

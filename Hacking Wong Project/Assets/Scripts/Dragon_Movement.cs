@@ -27,7 +27,6 @@ public class Dragon_Movement : MonoBehaviour
     {
         seeker = GetComponent<Seeker>();
         state = State.Idle;
-        InvokeRepeating("UpdatePath", 0f, 0.5f);
     }
 
     private void Update()
@@ -45,6 +44,7 @@ public class Dragon_Movement : MonoBehaviour
             case State.Chasing:
                 if (firstTimePath)
                 {
+                    InvokeRepeating("UpdatePath", 0f, 0.5f);
                     firstTimePath = false;
                     currentWaypoint = 0;
                 }
@@ -94,6 +94,7 @@ public class Dragon_Movement : MonoBehaviour
 
         if(Vector2.Distance(target.position, rb.position) <= shootRange)
         {
+            CancelInvoke("UpdatePath");
             state = State.Shooting;
             anim.SetFloat("Horizontal", 0);
             anim.SetFloat("Vertical", 0);
@@ -103,6 +104,7 @@ public class Dragon_Movement : MonoBehaviour
 
         if(Vector2.Distance(target.position, rb.position) >= attackRange)
         {
+            CancelInvoke("UpdatePath");
             anim.SetFloat("Horizontal", 0);
             anim.SetFloat("Vertical", 0);
             anim.SetFloat("Speed", 0);
