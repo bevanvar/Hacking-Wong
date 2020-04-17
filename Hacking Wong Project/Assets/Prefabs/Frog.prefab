@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 9008559427334010611}
   - component: {fileID: 9008559427334010612}
   - component: {fileID: 9008559427334010613}
-  - component: {fileID: 9008559426461274161}
   - component: {fileID: 9008559426461274162}
+  - component: {fileID: 9214371774039811505}
   m_Layer: 8
   m_Name: Frog
   m_TagString: Enemy
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9008559427334010614}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 142db7240c3078d4ba3347bf6cde45ef, type: 3}
   m_Name: 
@@ -141,32 +141,6 @@ MonoBehaviour:
   rb: {fileID: 9008559427334010611}
   speed: 4
   animator: {fileID: 9008559427334010612}
---- !u!61 &9008559426461274161
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9008559427334010614}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.75, y: 1.6}
-    newSize: {x: 0.7291667, y: 0.6666667}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2, y: 2}
-  m_EdgeRadius: 0
 --- !u!114 &9008559426461274162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,6 +153,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2983ecb016918294eae27df57b96d647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 50
+  maxHealth: 5
   anim: {fileID: 9008559427334010612}
   deathAnimTimeInSeconds: 0.778
+--- !u!58 &9214371774039811505
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9008559427334010614}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.2

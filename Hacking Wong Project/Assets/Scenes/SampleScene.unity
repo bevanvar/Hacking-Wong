@@ -382,20 +382,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boar
       objectReference: {fileID: 0}
-    - target: {fileID: 6071129139633162201, guid: 2c0a6ea7c9919774eb69d0cbd6c62867,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6071129139633162204, guid: 2c0a6ea7c9919774eb69d0cbd6c62867,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.555196
+      value: 7.82
       objectReference: {fileID: 0}
     - target: {fileID: 6071129139633162204, guid: 2c0a6ea7c9919774eb69d0cbd6c62867,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.4188231
+      value: -0.11
       objectReference: {fileID: 0}
     - target: {fileID: 6071129139633162204, guid: 2c0a6ea7c9919774eb69d0cbd6c62867,
         type: 3}
@@ -622,11 +617,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 9008559426461274162, guid: 4e98cd0b3a2b3284982eee28934d9b05,
-        type: 3}
-      propertyPath: maxHealth
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 9008559427334010609, guid: 4e98cd0b3a2b3284982eee28934d9b05,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -680,11 +670,6 @@ PrefabInstance:
     - target: {fileID: 9008559427334010609, guid: 4e98cd0b3a2b3284982eee28934d9b05,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9008559427334010613, guid: 4e98cd0b3a2b3284982eee28934d9b05,
-        type: 3}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9008559427334010614, guid: 4e98cd0b3a2b3284982eee28934d9b05,
