@@ -3,6 +3,7 @@
 public class WeaponSwitching : MonoBehaviour
 {
     public int selectedWeapon;
+    public Transform crossHair;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +40,11 @@ public class WeaponSwitching : MonoBehaviour
             if (i == selectedWeapon)
             {
                 weapon.gameObject.SetActive(true);
+                if (weapon.gameObject.tag == "Gun")
+                {
+                    crossHair.gameObject.SetActive(true);
+                }
+                else crossHair.gameObject.SetActive(false);
             } else
             {
                 weapon.gameObject.SetActive(false);

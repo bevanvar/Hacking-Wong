@@ -144,6 +144,10 @@ PrefabInstance:
       propertyPath: deathAnimTimeInSeconds
       value: 1.08
       objectReference: {fileID: 0}
+    - target: {fileID: 2039218246, guid: 21964bb79eebd7141867aedaf79505da, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3254794655423422487, guid: 21964bb79eebd7141867aedaf79505da,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1578,38 +1582,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &579736435 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8495491971243933099, guid: 6e6ec7937591eba418a58616b014ae49,
-    type: 3}
-  m_PrefabInstance: {fileID: 1493607389}
-  m_PrefabAsset: {fileID: 0}
---- !u!61 &579736441
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 579736435}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.40625, y: 2.34375}
-    newSize: {x: 1.875, y: 3.125}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.40625, y: 2.34375}
-  m_EdgeRadius: 0
 --- !u!4 &979214456 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8495491971243933094, guid: 6e6ec7937591eba418a58616b014ae49,
@@ -1629,51 +1601,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8495491970045089815, guid: 6e6ec7937591eba418a58616b014ae49,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8495491970235596509, guid: 6e6ec7937591eba418a58616b014ae49,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8495491970521882825, guid: 6e6ec7937591eba418a58616b014ae49,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8495491970521882825, guid: 6e6ec7937591eba418a58616b014ae49,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8495491970570721276, guid: 6e6ec7937591eba418a58616b014ae49,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8495491971243933089, guid: 6e6ec7937591eba418a58616b014ae49,
-        type: 3}
-      propertyPath: attackDamage
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 8495491971243933089, guid: 6e6ec7937591eba418a58616b014ae49,
-        type: 3}
-      propertyPath: attackRange
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8495491971243933092, guid: 6e6ec7937591eba418a58616b014ae49,
-        type: 3}
-      propertyPath: m_BodyType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8495491971243933092, guid: 6e6ec7937591eba418a58616b014ae49,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8495491971243933094, guid: 6e6ec7937591eba418a58616b014ae49,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1733,11 +1660,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 8495491971243933099, guid: 6e6ec7937591eba418a58616b014ae49,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e6ec7937591eba418a58616b014ae49, type: 3}
@@ -2202,7 +2124,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 498121791
   m_SortingLayer: -1
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -4702,6 +4624,10 @@ PrefabInstance:
     - target: {fileID: 63538215, guid: 21964bb79eebd7141867aedaf79505da, type: 3}
       propertyPath: deathAnimTimeInSeconds
       value: 1.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039218246, guid: 21964bb79eebd7141867aedaf79505da, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3254794655423422487, guid: 21964bb79eebd7141867aedaf79505da,
         type: 3}
