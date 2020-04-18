@@ -8,6 +8,9 @@ public class Player_Movement : MonoBehaviour
     public Rigidbody2D rb;
     Vector2 movement;
     public Animator animator;
+    private IInteractable interactable;
+
+    
 
     // Update is called once per frame
     void Update()
@@ -25,4 +28,31 @@ public class Player_Movement : MonoBehaviour
     {
         rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
     }
+
+    public void Interact(){
+        if(interactable!=null){
+            interactable.Interact();
+        }
+
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision){
+        if (collision.tag == "Interactable"){
+            interactable = collision.GetComponent<IInteractable>();
+        }
+    }
+        public void OnTriggerExit2D(Collider2D collision){
+        if (collision.tag == "Interactable")
+        {
+            if (interactable !=null)
+            {
+                interactable.StopInteract();
+                interactable = null;
+            }
+        }
+    }
+
+
+
+
 }
