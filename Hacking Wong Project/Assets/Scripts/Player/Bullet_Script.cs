@@ -12,17 +12,17 @@ public class Bullet_Script : MonoBehaviour
         Destroy(gameObject, 1.5f);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player")
         {
             return;
-        } else if(collision.gameObject.tag == "Enemy")
+        }
+        else if (collision.gameObject.tag == "Enemy")
         {
             collision.gameObject.GetComponent<Take_Damage>().DamageTaken(bulletDamage);
         }
         Instantiate(explosionEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);
-        //damage script happens here
     }
 }
