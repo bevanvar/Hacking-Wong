@@ -8,13 +8,12 @@ public class Boar_Movement : MonoBehaviour
     private float speed = 10f;
     public Rigidbody2D rb;
     public Transform target;
-    public float nextWaypointDistance = 0.5f;
+    public float nextWaypointDistance = 3f;
     Path path;
     private int currentWaypoint;
     Seeker seeker;
     public Animator anim;
     private bool firstTimePath = false;
-    private int reachcount = 0;
 
     private enum State
     {
@@ -77,7 +76,6 @@ public class Boar_Movement : MonoBehaviour
 
     IEnumerator waiter()
     {
-        Debug.Log("Wait");
         yield return new WaitForSeconds(3);
         state = State.Chasing;
         firstTimePath = true;
@@ -93,8 +91,6 @@ public class Boar_Movement : MonoBehaviour
 
     void OnPathComplete(Path p)
     {
-        reachcount++;
-        Debug.Log("Reached "+reachcount+" times");
         if (!p.error)
         {
             path = p;
@@ -130,7 +126,6 @@ public class Boar_Movement : MonoBehaviour
         anim.SetFloat("Horizontal", movement.x);
         anim.SetFloat("Vertical", movement.y);
         anim.SetFloat("Speed", speed);
-
     }
 
     private void OnDrawGizmos()
