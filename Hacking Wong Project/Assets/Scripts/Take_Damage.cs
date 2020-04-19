@@ -23,7 +23,7 @@ public class Take_Damage : MonoBehaviour
         {
             if(gameObject.tag == "Enemy")
             {
-                Destroy(gameObject, deathAnimTimeInSeconds); //object dies add dead animations if appropriate/deselect collider
+                Destroy(gameObject, deathAnimTimeInSeconds);
             }
         }
     }

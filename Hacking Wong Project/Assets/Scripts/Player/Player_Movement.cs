@@ -26,7 +26,7 @@ public class Player_Movement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + movement.normalized * speed * Time.fixedDeltaTime);
     }
 
     public void Interact(){
@@ -41,7 +41,7 @@ public class Player_Movement : MonoBehaviour
             interactable = collision.GetComponent<IInteractable>();
         }
     }
-        public void OnTriggerExit2D(Collider2D collision){
+    public void OnTriggerExit2D(Collider2D collision){
         if (collision.tag == "Interactable")
         {
             if (interactable !=null)

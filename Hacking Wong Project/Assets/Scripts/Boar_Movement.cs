@@ -62,11 +62,11 @@ public class Boar_Movement : MonoBehaviour
                         firstTimePath = false;
                         currentWaypoint = 0;
                     }
-                    if (Vector2.Distance(rb.position, target.position)<6) speed = 18f;   
+                    if (Vector2.Distance(rb.position, target.position)<6) speed = 18f;
                     else speed = 10f;
                     Pathfinding();
                 }
-                if (Vector2.Distance(rb.position, target.position)<2 || Vector2.Distance(rb.position, target.position)>12) 
+                if (Vector2.Distance(rb.position, target.position)<2 || Vector2.Distance(rb.position, target.position)>12)
                 {
                     state = State.Idle;
                     firstTimePath = false;
