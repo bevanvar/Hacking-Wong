@@ -2,8 +2,6 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-
 public class Boar_Movement : MonoBehaviour
 {
     public float speed;
@@ -71,7 +69,7 @@ public class Boar_Movement : MonoBehaviour
         yield return new WaitForSeconds(4);
     }
 
-        void UpdatePath()
+    void UpdatePath()
     {
         if (seeker.IsDone())
         {
