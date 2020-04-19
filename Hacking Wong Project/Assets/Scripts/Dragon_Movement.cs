@@ -37,6 +37,8 @@ public class Dragon_Movement : MonoBehaviour
         state = State.Idle;
         GameObject g = GameObject.FindGameObjectWithTag("Player");
         target = g.transform;
+        if (target.position.x <= rb.position.x) anim.SetBool("isRight", false);
+        else anim.SetBool("isRight", true);
     }
 
     private void Update()

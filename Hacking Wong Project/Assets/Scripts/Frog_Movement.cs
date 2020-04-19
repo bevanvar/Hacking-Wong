@@ -2,28 +2,43 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using System.Security.Cryptography;
+using System;
 
 public class Frog_Movement : MonoBehaviour
 {
     public float speed;
     public Rigidbody2D rb;
-    public Transform target;
+    Transform target;
     public float nextWaypointDistance = 3f;
     Path path;
     private int currentWaypoint;
     Seeker seeker;
     public Animator anim;
     private bool firstTimePath = false;
+    private float timeTracker;
+
+    public float chaseRange = 10f;
+    public float attackRange = 2f;
+    public float explosionRadius = 4f;
+    public float damage = 100f;
+
+    public LayerMask layerMask;
+    public Collider2D selfCollider;
 
     private enum State
     {
         Idle,
         Chasing,
+        Explode,
     }
     private State state;
 
     private void Start()
     {
+        GameObject g = GameObject.FindGameObjectWithTag("Player");
+        target = g.transform;
         if (target.position.x <= rb.position.x) anim.SetBool("isRight", false);
         else anim.SetBool("isRight", true);
         seeker = GetComponent<Seeker>();
@@ -40,12 +55,12 @@ public class Frog_Movement : MonoBehaviour
                 anim.SetFloat("horizontal", 0f);
                 anim.SetFloat("vertical", 0f);
                 anim.SetFloat("speed", 0f);
-                if (Vector2.Distance(rb.position, target.position)<12)
+                if (Vector2.Distance(rb.position, target.position)<chaseRange)
                 {
                     state = State.Chasing;
                     firstTimePath = true;
                 }
-            break;
+                break;
             case State.Chasing:
                 if (firstTimePath)
                 {
@@ -53,12 +68,30 @@ public class Frog_Movement : MonoBehaviour
                     firstTimePath = false;
                     currentWaypoint = 0;
                 }
-                /*if (Vector2.Distance(rb.position, target.position)< *INSERT DISTANCE)
+                if (Vector2.Distance(rb.position, target.position)< attackRange)
                 {
-                    explode
+                    firstTimePath = true;
+                    state = State.Explode;
+                    return;
                 }
-                */
                 Pathfinding();
+                break;
+            case State.Explode:
+                anim.SetBool("isRight", rb.position.x > target.position.x);
+                anim.SetFloat("horizontal", 0f);
+                anim.SetFloat("vertical", 0f);
+                anim.SetFloat("speed", 0f);
+                if (firstTimePath)
+                {
+                    firstTimePath = false;
+                    timeTracker = Time.time + 1.0f;
+                } else
+                {
+                    if (timeTracker <= Time.time)
+                    {
+                        Explode();
+                    }
+                }
                 break;
         }
     }
@@ -78,6 +111,30 @@ public class Frog_Movement : MonoBehaviour
             path = p;
             currentWaypoint = 0;
         }
+    }
+
+    private void Explode()
+    {
+        firstTimePath = true;
+        selfCollider.enabled = false;
+        //stop moving
+        Collider2D[] hitBy = Physics2D.OverlapCircleAll(rb.position, explosionRadius, layerMask);
+        anim.SetTrigger("hurt");
+        foreach (Collider2D hit in hitBy)
+        {
+            if(hit.tag == "Enemy")
+            {
+                hit.GetComponent<Take_Damage>().DamageTaken(damage);
+            } else if(hit.tag == "Player")
+            {
+                Debug.Log("Player hurt");
+            } else
+            {
+                //bullet hit
+                Destroy(hit);
+            }
+        }
+        Destroy(gameObject, 0.8f);
     }
 
     private void Pathfinding()
@@ -112,6 +169,7 @@ public class Frog_Movement : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.DrawWireSphere(rb.position, 8);
+        Gizmos.DrawWireSphere(rb.position, attackRange);
+        Gizmos.DrawWireSphere(rb.position, explosionRadius);
     }
 }

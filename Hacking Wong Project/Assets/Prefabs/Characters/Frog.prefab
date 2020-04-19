@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 9008559427334010613}
   - component: {fileID: 9008559426461274162}
   - component: {fileID: 9214371774039811505}
+  - component: {fileID: 2123715135}
   m_Layer: 8
   m_Name: Frog
   m_TagString: Enemy
@@ -133,14 +134,23 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9008559427334010614}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 142db7240c3078d4ba3347bf6cde45ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 10
   rb: {fileID: 9008559427334010611}
-  speed: 4
-  animator: {fileID: 9008559427334010612}
+  nextWaypointDistance: 3
+  anim: {fileID: 9008559427334010612}
+  chaseRange: 10
+  attackRange: 2
+  explosionRadius: 4
+  damage: 20
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 1280
+  selfCollider: {fileID: 9214371774039811505}
 --- !u!114 &9008559426461274162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,3 +182,31 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.2
+--- !u!114 &2123715135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9008559427334010614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 373b52eb9bf8c40f785bb6947a1aee66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  drawGizmos: 1
+  detailedGizmos: 0
+  startEndModifier:
+    addPoints: 0
+    exactStartPoint: 3
+    exactEndPoint: 3
+    useRaycasting: 0
+    mask:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    useGraphRaycasting: 0
+  traversableTags: -1
+  tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  graphMask:
+    value: -1

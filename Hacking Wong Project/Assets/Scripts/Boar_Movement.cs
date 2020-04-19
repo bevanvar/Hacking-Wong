@@ -7,13 +7,15 @@ public class Boar_Movement : MonoBehaviour
 {
     private float speed = 10f;
     public Rigidbody2D rb;
-    public Transform target;
+    Transform target;
     public float nextWaypointDistance = 3f;
     Path path;
     private int currentWaypoint;
     Seeker seeker;
     public Animator anim;
     private bool firstTimePath = false;
+    public float chaseRange = 12f;
+    public float attackRange = 2f;
 
     private enum State
     {
@@ -24,6 +26,9 @@ public class Boar_Movement : MonoBehaviour
 
     private void Start()
     {
+
+        GameObject g = GameObject.FindGameObjectWithTag("Player");
+        target = g.transform;
         if (target.position.x <= rb.position.x) anim.SetBool("isRight", false);
         else anim.SetBool("isRight", true);
         seeker = GetComponent<Seeker>();
@@ -41,11 +46,11 @@ public class Boar_Movement : MonoBehaviour
                 anim.SetFloat("Horizontal", 0f);
                 anim.SetFloat("Vertical", 0f);
                 anim.SetFloat("Speed", 0f);
-                if(Vector2.Distance(rb.position, target.position)<2)
+                if(Vector2.Distance(rb.position, target.position)<attackRange)
                 {
                     StartCoroutine(waiter());
                 }
-                else if(Vector2.Distance(rb.position, target.position)<=12)
+                else if(Vector2.Distance(rb.position, target.position)<=chaseRange)
                 {
                     state = State.Chasing;
                     firstTimePath = true;
@@ -53,7 +58,8 @@ public class Boar_Movement : MonoBehaviour
             break;
             case State.Chasing:
                 speed = 10f;
-                if (Vector2.Distance(rb.position, target.position)>=2 && Vector2.Distance(rb.position, target.position)<=12)
+                float distance = Vector2.Distance(rb.position, target.position);
+                if (distance>=attackRange && distance<=chaseRange)
                 {
                     if (firstTimePath)
                     {
@@ -61,11 +67,11 @@ public class Boar_Movement : MonoBehaviour
                         firstTimePath = false;
                         currentWaypoint = 0;
                     }
-                    if (Vector2.Distance(rb.position, target.position)<6) speed = 18f;
+                    if (distance<6) speed = 18f;
                     else speed = 10f;
                     Pathfinding();
                 }
-                if (Vector2.Distance(rb.position, target.position)<2 || Vector2.Distance(rb.position, target.position)>12)
+                if (distance<attackRange || distance>chaseRange)
                 {
                     state = State.Idle;
                     firstTimePath = false;
@@ -130,6 +136,6 @@ public class Boar_Movement : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.DrawWireSphere(rb.position, 8);
+        Gizmos.DrawWireSphere(rb.position, chaseRange);
     }
 }
