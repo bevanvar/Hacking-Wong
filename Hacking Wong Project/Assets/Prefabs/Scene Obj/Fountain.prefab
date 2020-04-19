@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6469310486274033114}
   - component: {fileID: 6469310486274033109}
   - component: {fileID: 6469310486274033115}
-  - component: {fileID: 878763360446384699}
+  - component: {fileID: 5971380638198463655}
   m_Layer: 0
   m_Name: Fountain
   m_TagString: Untagged
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 6469310486274033108}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 41.157, y: 30.614, z: -0.062}
-  m_LocalScale: {x: 2.147, y: 2.147, z: 2.147}
+  m_LocalScale: {x: 2.462609, y: 2.4046402, z: 2.147}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -105,8 +105,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!60 &878763360446384699
-PolygonCollider2D:
+--- !u!61 &5971380638198463655
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -118,7 +118,7 @@ PolygonCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.36851978}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -128,37 +128,6 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.7558626, y: -0.73849213}
-      - {x: 0.947772, y: -0.33526444}
-      - {x: 0.8955441, y: -0.014278906}
-      - {x: 0.4680031, y: 0.4532409}
-      - {x: 0.30038917, y: 0.4812435}
-      - {x: 0.26005504, y: 0.42580333}
-      - {x: 0.35307714, y: 0.16020218}
-      - {x: -0.047951117, y: -0.14536892}
-      - {x: 0.17213932, y: -0.121989466}
-      - {x: 0.21570717, y: -0.062102985}
-      - {x: 0.7461793, y: -0.046125498}
-      - {x: 0.61332935, y: -0.21987277}
-      - {x: 0.3760648, y: -0.37626114}
-      - {x: 0.037477132, y: -0.44597843}
-      - {x: -0.3546833, y: -0.41579577}
-      - {x: -0.5675548, y: -0.29150805}
-      - {x: -0.7214397, y: -0.13313328}
-      - {x: -0.7923252, y: 0.01781643}
-      - {x: -0.14908412, y: -0.15258877}
-      - {x: -0.36885294, y: 0.033607356}
-      - {x: -0.38032013, y: 0.30283844}
-      - {x: -0.34413293, y: 0.5327801}
-      - {x: -0.629505, y: 0.38839552}
-      - {x: -0.9330461, y: -0.01785552}
-      - {x: -0.9776818, y: -0.27456048}
-      - {x: -0.9218881, y: -0.6026777}
-      - {x: -0.53795403, y: -0.9218712}
-      - {x: -0.29351845, y: -1.0031064}
-      - {x: 0.4535794, y: -0.9772207}
-    - - {x: 0.9397285, y: -0.31916684}
-      - {x: 0.8214605, y: -0.6875001}
-      - {x: 0.85045713, y: -0.48436525}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.2629604}
+  m_EdgeRadius: 0
