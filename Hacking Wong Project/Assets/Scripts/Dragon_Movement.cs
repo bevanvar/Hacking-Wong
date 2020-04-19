@@ -1,11 +1,13 @@
 ﻿using Pathfinding;
+using System;
+using System.Net.Sockets;
 using UnityEngine;
 
 public class Dragon_Movement : MonoBehaviour
 {
     public float speed;
     public Rigidbody2D rb;
-    public Transform target;
+    Transform target;
     public float nextWaypointDistance = 3f;
     Path path;
     private int currentWaypoint;
@@ -14,6 +16,12 @@ public class Dragon_Movement : MonoBehaviour
     public float attackRange = 15f;
     public float shootRange = 6f;
     private bool firstTimePath = false;
+
+    public float fireRate = 0.5f;
+    private float nextFireTime = 0f;
+    public Transform shootPoint;
+    public GameObject firePrefab;
+    public float force = 10f;
 
     private enum State
     {
@@ -27,6 +35,8 @@ public class Dragon_Movement : MonoBehaviour
     {
         seeker = GetComponent<Seeker>();
         state = State.Idle;
+        GameObject g = GameObject.FindGameObjectWithTag("Player");
+        target = g.transform;
     }
 
     private void Update()
@@ -51,13 +61,16 @@ public class Dragon_Movement : MonoBehaviour
                 Pathfinding();
                 break;
             case State.Shooting:
-                Debug.Log("Currently Shooting");
                 if (target.position.x < rb.position.x)
                 {
                     anim.SetBool("isRight", false);
                 } else if (target.position.x > rb.position.x)
                 {
                     anim.SetBool("isRight", true);
+                }
+                if (Time.time > nextFireTime)
+                {
+                    Shoot();
                 }
                 if (Vector2.Distance(rb.position, target.position) > shootRange)
                 {
@@ -143,8 +156,18 @@ public class Dragon_Movement : MonoBehaviour
         
     }
 
-    private void OnDrawGizmos()
+    //private void OnDrawGizmos()
+    //{
+    //    Gizmos.DrawWireSphere(rb.position, attackRange);
+    //}
+
+    private void Shoot()
     {
-        Gizmos.DrawWireSphere(rb.position, attackRange);
+        anim.SetTrigger("shoot");
+        Vector2 shootDirection = (Vector2)target.position - rb.position;
+        float angle = Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg;
+        GameObject fireProjectile = Instantiate(firePrefab, shootPoint.position, Quaternion.Euler(0, 0, angle));
+        fireProjectile.GetComponent<Rigidbody2D>().AddForce(force* shootDirection.normalized, ForceMode2D.Impulse);
+        nextFireTime = Time.time + 1/fireRate;
     }
 }

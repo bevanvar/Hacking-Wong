@@ -420,7 +420,7 @@ GameObject:
   - component: {fileID: 8495491971243933092}
   - component: {fileID: 8495491971243933095}
   - component: {fileID: 8495491971243933088}
-  - component: {fileID: 39986702}
+  - component: {fileID: 9182279941609761856}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -528,7 +528,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6b03206ff0ea514b99bbef4153419ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 5
   rb: {fileID: 8495491971243933092}
   animator: {fileID: 8495491971243933088}
 --- !u!95 &8495491971243933088
@@ -550,7 +550,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!61 &39986702
+--- !u!61 &9182279941609761856
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -563,7 +563,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.03200972, y: 0.00000023841858}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -574,5 +574,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.40625, y: 2.34375}
+  m_Size: {x: 1.2782114, y: 2.1836667}
   m_EdgeRadius: 0
