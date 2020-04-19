@@ -2,19 +2,19 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
 public class Boar_Movement : MonoBehaviour
 {
-    public float speed;
+    private float speed = 10f;
     public Rigidbody2D rb;
     public Transform target;
-    public float nextWaypointDistance = 3f;
+    public float nextWaypointDistance = 0.5f;
     Path path;
     private int currentWaypoint;
     Seeker seeker;
     public Animator anim;
     private bool firstTimePath = false;
+    private int reachcount = 0;
 
     private enum State
     {
@@ -25,42 +25,52 @@ public class Boar_Movement : MonoBehaviour
 
     private void Start()
     {
+        if (target.position.x <= rb.position.x) anim.SetBool("isRight", false);
+        else anim.SetBool("isRight", true);
         seeker = GetComponent<Seeker>();
         state = State.Idle;
     }
 
     private void Update()
     {
+        if (target.position.x <= rb.position.x) anim.SetBool("isRight", false);
+        else anim.SetBool("isRight", true);
         switch (state)
         {
-            default:
             case State.Idle:
-                if ( Vector2.Distance(rb.position, target.position)<10)
-                {
-                    state = State.Chasing;
-                    firstTimePath = true;
-                }
-                if (target.position.x < rb.position.x)
-                {
-                    anim.SetBool("isRight", false);
-                }
-                else if (target.position.x > rb.position.x)
-                {
-                    anim.SetBool("isRight", true);
-                }
-                break;
-            case State.Chasing:
-                if (firstTimePath)
-                {
-                    InvokeRepeating("UpdatePath", 0f, 0.5f);
-                    firstTimePath = false;
-                    currentWaypoint = 0;
-                }
+                speed = 0f;
+                anim.SetFloat("Horizontal", 0f);
+                anim.SetFloat("Vertical", 0f);
+                anim.SetFloat("Speed", 0f);
                 if(Vector2.Distance(rb.position, target.position)<2)
                 {
                     StartCoroutine(waiter());
                 }
-                Pathfinding();
+                else if(Vector2.Distance(rb.position, target.position)<=12)
+                {
+                    state = State.Chasing;
+                    firstTimePath = true;
+                }
+            break;
+            case State.Chasing:
+                speed = 10f;
+                if (Vector2.Distance(rb.position, target.position)>=2 && Vector2.Distance(rb.position, target.position)<=12)
+                {
+                    if (firstTimePath)
+                    {
+                        InvokeRepeating("UpdatePath", 0f, 0.5f);
+                        firstTimePath = false;
+                        currentWaypoint = 0;
+                    }
+                    if (Vector2.Distance(rb.position, target.position)<6) speed = 18f;   
+                    else speed = 10f;
+                    Pathfinding();
+                }
+                if (Vector2.Distance(rb.position, target.position)<2 || Vector2.Distance(rb.position, target.position)>12) 
+                {
+                    state = State.Idle;
+                    firstTimePath = false;
+                }
             break;
         }
     }
@@ -68,10 +78,12 @@ public class Boar_Movement : MonoBehaviour
     IEnumerator waiter()
     {
         Debug.Log("Wait");
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(3);
+        state = State.Chasing;
+        firstTimePath = true;
     }
 
-        void UpdatePath()
+    void UpdatePath()
     {
         if (seeker.IsDone())
         {
@@ -81,6 +93,8 @@ public class Boar_Movement : MonoBehaviour
 
     void OnPathComplete(Path p)
     {
+        reachcount++;
+        Debug.Log("Reached "+reachcount+" times");
         if (!p.error)
         {
             path = p;
@@ -90,13 +104,12 @@ public class Boar_Movement : MonoBehaviour
 
     private void Pathfinding()
     {
+        if (target.position.x <= rb.position.x) anim.SetBool("isRight", false);
+        else anim.SetBool("isRight", true);
         if (path == null)
         {
             return;
         }
-
-        
-
         //Debug.Log(currentWaypoint + " " + path.vectorPath.Count);
         //if (currentWaypoint > path.vectorPath.Count)
         //{
@@ -105,7 +118,6 @@ public class Boar_Movement : MonoBehaviour
         Vector2 movement = ((Vector2)path.vectorPath[currentWaypoint] - rb.position);
         Vector2 direction = movement.normalized;
         rb.MovePosition(direction * speed * Time.deltaTime + rb.position);
-
         float distance = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
         if (distance <= nextWaypointDistance)
         {
@@ -117,15 +129,7 @@ public class Boar_Movement : MonoBehaviour
         }
         anim.SetFloat("Horizontal", movement.x);
         anim.SetFloat("Vertical", movement.y);
-        anim.SetFloat("Speed", movement.sqrMagnitude);
-        if (target.position.x < rb.position.x)
-        {
-            anim.SetBool("isRight", false);
-        }
-        else if (target.position.x > rb.position.x)
-        {
-            anim.SetBool("isRight", true);
-        }
+        anim.SetFloat("Speed", speed);
 
     }
 
