@@ -43,6 +43,11 @@ public class Dragon_Movement : MonoBehaviour
 
     private void Update()
     {
+        if(anim.GetCurrentAnimatorStateInfo(0).IsTag("Dead") || anim.GetCurrentAnimatorStateInfo(0).IsTag("Hurt"))
+        {
+            rb.velocity = Vector2.zero;
+            return;
+        }
         switch (state)
         {
             default:

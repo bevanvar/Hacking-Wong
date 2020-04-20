@@ -37,11 +37,17 @@ public class Boar_Movement : MonoBehaviour
 
     private void Update()
     {
+        if(anim.GetCurrentAnimatorStateInfo(0).IsTag("Dead") || anim.GetCurrentAnimatorStateInfo(0).IsTag("Hurt"))
+        {
+            rb.velocity = Vector2.zero;
+            return;
+        }
         if (target.position.x <= rb.position.x) anim.SetBool("isRight", false);
         else anim.SetBool("isRight", true);
         switch (state)
         {
             case State.Idle:
+                CancelInvoke();
                 speed = 0f;
                 anim.SetFloat("Horizontal", 0f);
                 anim.SetFloat("Vertical", 0f);

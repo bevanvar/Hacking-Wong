@@ -16,14 +16,18 @@ public class Take_Damage : MonoBehaviour
 
     public void DamageTaken(float damage)
     {
-        currentHealth -= damage;
-        anim.SetTrigger("hurt");
-        anim.SetFloat("Health", currentHealth);
-        if (currentHealth <= 0)
+        if (currentHealth>0)
         {
-            if(gameObject.tag == "Enemy")
+
+            currentHealth -= damage;
+            anim.SetTrigger("hurt");
+            anim.SetFloat("Health", currentHealth);
+            if (currentHealth <= 0)
             {
-                Destroy(gameObject, deathAnimTimeInSeconds);
+                if (gameObject.tag == "Enemy")
+                {
+                    Destroy(gameObject, deathAnimTimeInSeconds);
+                }
             }
         }
     }

@@ -47,11 +47,17 @@ public class Frog_Movement : MonoBehaviour
 
     private void Update()
     {
+        if (anim.GetCurrentAnimatorStateInfo(0).IsTag("Dead"))
+        {
+            rb.velocity = Vector2.zero;
+            return;
+        }
         if (target.position.x <= rb.position.x) anim.SetBool("isRight", false);
         else anim.SetBool("isRight", true);
         switch (state)
         {
             case State.Idle:
+                CancelInvoke();
                 anim.SetFloat("horizontal", 0f);
                 anim.SetFloat("vertical", 0f);
                 anim.SetFloat("speed", 0f);
@@ -77,6 +83,7 @@ public class Frog_Movement : MonoBehaviour
                 Pathfinding();
                 break;
             case State.Explode:
+                CancelInvoke();
                 anim.SetBool("isRight", rb.position.x > target.position.x);
                 anim.SetFloat("horizontal", 0f);
                 anim.SetFloat("vertical", 0f);
