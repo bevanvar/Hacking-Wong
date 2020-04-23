@@ -9,9 +9,11 @@ public class SpawnManager : MonoBehaviour
     public GameObject enemy3;
     public int xPos;
     public int yPos;
-    public int enemyCount;
+    private int enemyCount = 0;
     public Transform target;
-    public int waveCount = 1;
+    private int waveCount = 0;
+    private int deathCount = 0;
+    private bool enemies = false;
 
     private void Start()
     {
@@ -20,38 +22,53 @@ public class SpawnManager : MonoBehaviour
 
     IEnumerator enemyDrop()
     {
+        //wait a second after level starts
         yield return new WaitForSeconds(1f);
-        while(waveCount<=3)
+        while(waveCount<3)
         {
-            for(int i=0; i<waveCount; i++)
+            //if enemies present
+            if(enemies)
             {
-                Debug.Log("Wave " +waveCount);
-                generateValidPos();
-                int enemyType = Random.Range(1, 4);
-                if (enemyType == 1)
-                {
-                    Instantiate(enemy1, new Vector3(xPos, yPos, 0), Quaternion.identity);
-                }
-                else if (enemyType == 2)
-                {
-                    Instantiate(enemy2, new Vector3(xPos, yPos, 0), Quaternion.identity);
-                }
-                else
-                {
-                    Instantiate(enemy3, new Vector3(xPos, yPos, 0), Quaternion.identity);
-                }
-                yield return new WaitForSeconds(2f);
+                yield return new WaitForSeconds(5f);
+                if (deathCount == enemyCount) enemies = false;
+                continue;
             }
-            waveCount += 1;
-            //add checker to see if wave is defeated
-            while (!checkIfPresent()) { };
-            Debug.Log("Wave finished");
-            //yield return new WaitForSeconds(10f);
+            //if enemies absent
+            else
+            {
+                waveCount += 1;
+                //number of enemies spawned = wave number
+                for (int i = 0; i < waveCount; i++)
+                {
+                    Debug.Log("Wave " + waveCount);
+                    generateValidPos();
+                    int enemyType = Random.Range(1, 4);
+                    if (enemyType == 1)
+                    {
+                        Instantiate(enemy1, new Vector3(xPos, yPos, 0), Quaternion.identity);
+                    }
+                    else if (enemyType == 2)
+                    {
+                        Instantiate(enemy2, new Vector3(xPos, yPos, 0), Quaternion.identity);
+                    }
+                    else
+                    {
+                        Instantiate(enemy3, new Vector3(xPos, yPos, 0), Quaternion.identity);
+                    }
+                    enemyCount += 1;
+                    Debug.Log("E " + enemyCount + " D " + deathCount);
+                    enemies = true;
+                    //wait 2 seconds before spawning next enemy
+                    yield return new WaitForSeconds(2f);
+                }
+            }        
         }
-        //add arrow instantiation
         Debug.Log("Finished waves");
+        //check if all enemies are killed
+        //instantiate arrow
     }
 
+    //function to generate a valid spawn position
     void generateValidPos()
     {
         int flag = 0;
@@ -67,14 +84,13 @@ public class SpawnManager : MonoBehaviour
         if (flag == 0) generateValidPos();
     }
 
-    bool checkIfPresent()
+    //function to register a new death
+    public void newDeath()
     {
-        bool flag = false;
-        //if (GameObject.Find("Boar") || GameObject.Find("Dragon") || GameObject.Find("Frog"))
-        if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
-        {
-            flag = true;
-        }
-        return flag;
+        deathCount += 1;
+        if (deathCount == enemyCount) enemies = false;
+        else enemies = true;
+        Debug.Log("E " + enemyCount + " D " + deathCount);
     }
+
 }

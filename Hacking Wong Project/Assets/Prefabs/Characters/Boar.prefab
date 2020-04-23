@@ -122,9 +122,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 6071129139633162206}
-  target: {fileID: 0}
   nextWaypointDistance: 3
   anim: {fileID: 6071129139633162205}
+  chaseRange: 12
+  attackRange: 2
 --- !u!95 &6071129139633162205
 Animator:
   serializedVersion: 3
@@ -156,6 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2983ecb016918294eae27df57b96d647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 6612244332638960732, guid: ba32beb3c39a40742896e0fea0560e5a, type: 3}
   maxHealth: 100
   anim: {fileID: 6071129139633162205}
   deathAnimTimeInSeconds: 1.5
