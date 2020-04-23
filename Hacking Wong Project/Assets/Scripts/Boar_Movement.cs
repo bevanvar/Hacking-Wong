@@ -29,8 +29,6 @@ public class Boar_Movement : MonoBehaviour
 
         GameObject g = GameObject.FindGameObjectWithTag("Player");
         target = g.transform;
-        if (target.position.x <= rb.position.x) anim.SetBool("isRight", false);
-        else anim.SetBool("isRight", true);
         seeker = GetComponent<Seeker>();
         state = State.Idle;
     }
@@ -42,8 +40,6 @@ public class Boar_Movement : MonoBehaviour
             rb.velocity = Vector2.zero;
             return;
         }
-        if (target.position.x <= rb.position.x) anim.SetBool("isRight", false);
-        else anim.SetBool("isRight", true);
         switch (state)
         {
             case State.Idle:
@@ -52,7 +48,9 @@ public class Boar_Movement : MonoBehaviour
                 anim.SetFloat("Horizontal", 0f);
                 anim.SetFloat("Vertical", 0f);
                 anim.SetFloat("Speed", 0f);
-                if(Vector2.Distance(rb.position, target.position)<attackRange)
+                if (target.position.x <= rb.position.x) anim.SetBool("isRight", false);
+                else anim.SetBool("isRight", true);
+                if (Vector2.Distance(rb.position, target.position)<attackRange)
                 {
                     StartCoroutine(waiter());
                 }
@@ -112,8 +110,6 @@ public class Boar_Movement : MonoBehaviour
 
     private void Pathfinding()
     {
-        if (target.position.x <= rb.position.x) anim.SetBool("isRight", false);
-        else anim.SetBool("isRight", true);
         if (path == null)
         {
             return;
@@ -138,6 +134,8 @@ public class Boar_Movement : MonoBehaviour
         anim.SetFloat("Horizontal", movement.x);
         anim.SetFloat("Vertical", movement.y);
         anim.SetFloat("Speed", speed);
+        if (movement.x<=0) anim.SetBool("isRight", false);
+        else anim.SetBool("isRight", true);
     }
 
     private void OnDrawGizmos()
