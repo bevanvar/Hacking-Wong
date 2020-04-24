@@ -7,6 +7,7 @@ public class SpawnManager : MonoBehaviour
     public GameObject enemy1;
     public GameObject enemy2;
     public GameObject enemy3;
+    public GameObject spawnFinished;
     public int xPos;
     public int yPos;
     private int enemyCount = 0;
@@ -59,13 +60,22 @@ public class SpawnManager : MonoBehaviour
                     Debug.Log("E " + enemyCount + " D " + deathCount);
                     enemies = true;
                     //wait 2 seconds before spawning next enemy
-                    yield return new WaitForSeconds(2f);
+                    //yield return new WaitForSeconds(2f);
                 }
             }        
         }
         Debug.Log("Finished waves");
         //check if all enemies are killed
         //instantiate arrow
+        while(true)
+        {
+            if (!enemies) break;
+            else
+            {
+                yield return new WaitForSeconds(2f);
+            }
+        }
+        Instantiate(spawnFinished, new Vector3(20, 0, 0), Quaternion.identity);
     }
 
     //function to generate a valid spawn position
@@ -76,7 +86,7 @@ public class SpawnManager : MonoBehaviour
         yPos = Random.Range(-5, 6);
         Vector2 pos = new Vector2(xPos, yPos);
         float distance = Vector2.Distance(pos, target.position);
-        if (distance >= 15f)
+        if (distance >= 12f)
         {
             if (xPos >= -14 && xPos <= -1 && yPos >= 0 && yPos <= 5) flag = 1;
             if (xPos >= -4 && xPos <= 11 && yPos >= -5 && yPos <= -1) flag = 1;
@@ -90,7 +100,6 @@ public class SpawnManager : MonoBehaviour
         deathCount += 1;
         if (deathCount == enemyCount) enemies = false;
         else enemies = true;
-        Debug.Log("E " + enemyCount + " D " + deathCount);
     }
 
 }
