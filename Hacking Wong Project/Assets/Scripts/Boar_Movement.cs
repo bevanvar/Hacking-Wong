@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 public class Boar_Movement : MonoBehaviour
 {
-    private float speed = 8f;
+    private float speed = 6f;
     public Rigidbody2D rb;
     Transform target;
     public float nextWaypointDistance = 3f;
@@ -48,8 +48,7 @@ public class Boar_Movement : MonoBehaviour
                 anim.SetFloat("Horizontal", 0f);
                 anim.SetFloat("Vertical", 0f);
                 anim.SetFloat("Speed", 0f);
-                if (target.position.x <= rb.position.x) anim.SetBool("isRight", false);
-                else anim.SetBool("isRight", true);
+                anim.SetBool("isRight", false);
                 if (Vector2.Distance(rb.position, target.position)<attackRange)
                 {
                     StartCoroutine(waiter());
@@ -61,7 +60,7 @@ public class Boar_Movement : MonoBehaviour
                 }
             break;
             case State.Chasing:
-                speed = 8f;
+                speed = 6f;
                 float distance = Vector2.Distance(rb.position, target.position);
                 if (distance>=attackRange && distance<=chaseRange)
                 {
@@ -71,8 +70,8 @@ public class Boar_Movement : MonoBehaviour
                         firstTimePath = false;
                         currentWaypoint = 0;
                     }
-                    if (distance<6) speed = 12f;
-                    else speed = 8f;
+                    if (distance<6) speed = 8f;
+                    else speed = 6f;
                     Pathfinding();
                 }
                 if (distance<attackRange || distance>chaseRange)
