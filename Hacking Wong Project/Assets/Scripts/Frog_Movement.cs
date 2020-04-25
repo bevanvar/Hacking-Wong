@@ -136,7 +136,7 @@ public class Frog_Movement : MonoBehaviour
                 hit.GetComponent<Take_Damage>().DamageTaken(damage);
             } else if(hit.tag == "Player")
             {
-                Debug.Log("Player hurt");
+                hit.GetComponent<Player_Movement>().TakeDamage(damage);
             } else
             {
                 //bullet hit
@@ -144,6 +144,7 @@ public class Frog_Movement : MonoBehaviour
             }
         }
         Destroy(gameObject, 0.8f);
+        GameObject.Find("GameManager").GetComponent<SpawnManager>().newDeath();
     }
 
     private void Pathfinding()

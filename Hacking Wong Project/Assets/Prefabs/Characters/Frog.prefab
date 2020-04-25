@@ -146,7 +146,7 @@ MonoBehaviour:
   chaseRange: 10
   attackRange: 2
   explosionRadius: 4
-  damage: 20
+  damage: 40
   layerMask:
     serializedVersion: 2
     m_Bits: 1280
@@ -163,7 +163,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2983ecb016918294eae27df57b96d647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 6612244332638960732, guid: ba32beb3c39a40742896e0fea0560e5a, type: 3}
   maxHealth: 5
   anim: {fileID: 9008559427334010612}
   deathAnimTimeInSeconds: 0.778

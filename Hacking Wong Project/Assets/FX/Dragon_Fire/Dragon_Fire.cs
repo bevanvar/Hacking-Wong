@@ -21,8 +21,7 @@ public class Dragon_Fire : MonoBehaviour
         }
         if(other.tag == "Player")
         {
-            //hurt the player
-            Debug.Log("Hurt");
+            other.GetComponent<Player_Movement>().TakeDamage(damage);
         }
         Destroy(gameObject);
     }

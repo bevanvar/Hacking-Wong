@@ -65,6 +65,10 @@ public class Dragon_Movement : MonoBehaviour
                     firstTimePath = false;
                     currentWaypoint = 0;
                 }
+                if (Time.time < nextFireTime)
+                {
+                    return;
+                }
                 Pathfinding();
                 break;
             case State.Shooting:

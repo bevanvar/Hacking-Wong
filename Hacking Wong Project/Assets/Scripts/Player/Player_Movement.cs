@@ -22,11 +22,7 @@ public class Player_Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            TakeDamage(10);
-        }
-        if (Input.GetKeyDown(KeyCode.Space) || animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack")) //check if player is hurt or dying here
+        if (Input.GetKeyDown(KeyCode.Space) || animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack") || animator.GetCurrentAnimatorStateInfo(0).IsTag("Hurt")) //check if player is hurt or dying here
         {
             movement = Vector2.zero;
         }
@@ -72,14 +68,15 @@ public class Player_Movement : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        if (animator.GetCurrentAnimatorStateInfo(0).IsTag("Hurt")) return;
         if(damage >= currentHealth)
         {
             currentHealth = 0;
-            Debug.Log("Player Dead");
+            Debug.Log("Player dead");
         } else
         {
-            currentHealth -= damage;
-            Debug.Log("Player Hurt");
+            currentHealth = currentHealth - damage;
+            animator.SetTrigger("Hurt");
         }
         healthbar.SetHealth(currentHealth);
     }
