@@ -223,12 +223,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2508ce5344b621c4ca55920d60cabbe1, type: 3}
---- !u!4 &168713498 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8495491971243933094, guid: 6e6ec7937591eba418a58616b014ae49,
-    type: 3}
-  m_PrefabInstance: {fileID: 1493607389}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &359592662 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7589744910420898867, guid: 2508ce5344b621c4ca55920d60cabbe1,
@@ -2290,22 +2284,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
-    - target: {fileID: 6612244332638960732, guid: ba32beb3c39a40742896e0fea0560e5a,
-        type: 3}
-      propertyPath: m_TagString
-      value: Manager
-      objectReference: {fileID: 0}
-    - target: {fileID: 6612244332638960733, guid: ba32beb3c39a40742896e0fea0560e5a,
-        type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 168713498}
-    - target: {fileID: 6612244332638960733, guid: ba32beb3c39a40742896e0fea0560e5a,
-        type: 3}
-      propertyPath: spawnFinished
-      value: 
-      objectReference: {fileID: 7329347092284256243, guid: 7500536ac270fdc4a8e1691f75e6540c,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba32beb3c39a40742896e0fea0560e5a, type: 3}
 --- !u!4 &1421720974 stripped

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6612244332638960733}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: Untagged
+  m_TagString: Manager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46,6 +46,7 @@ MonoBehaviour:
   enemy1: {fileID: 6071129139633162200, guid: 2c0a6ea7c9919774eb69d0cbd6c62867, type: 3}
   enemy2: {fileID: 9008559427334010614, guid: 4e98cd0b3a2b3284982eee28934d9b05, type: 3}
   enemy3: {fileID: 3254794655423422488, guid: 21964bb79eebd7141867aedaf79505da, type: 3}
+  spawnFinished: {fileID: 7329347092284256243, guid: 7500536ac270fdc4a8e1691f75e6540c,
+    type: 3}
   xPos: 0
   yPos: 0
-  target: {fileID: 0}

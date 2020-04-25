@@ -124,11 +124,10 @@ public class Frog_Movement : MonoBehaviour
 
     private void Explode()
     {
-        firstTimePath = true;
-        selfCollider.enabled = false;
+        firstTimePath = true; //to prevent multiple explosions (since animation lasts longer than one frame
+        selfCollider.enabled = false; //unneccesary for boar
         //stop moving
-        Collider2D[] hitBy = Physics2D.OverlapCircleAll(rb.position, explosionRadius, layerMask);
-        anim.SetTrigger("hurt");
+        Collider2D[] hitBy = Physics2D.OverlapCircleAll(rb.position, explosionRadius, layerMask); // here you simply wanna use Physics2D.OverlapCircle and set LayerMask to only "Player"
         foreach (Collider2D hit in hitBy)
         {
             if(hit.tag == "Enemy")
@@ -136,7 +135,7 @@ public class Frog_Movement : MonoBehaviour
                 hit.GetComponent<Take_Damage>().DamageTaken(damage);
             } else if(hit.tag == "Player")
             {
-                hit.GetComponent<Player_Movement>().TakeDamage(damage);
+                hit.GetComponent<Player_Movement>().TakeDamage(damage); //and then this will damage the player
             } else
             {
                 //bullet hit
@@ -144,7 +143,7 @@ public class Frog_Movement : MonoBehaviour
             }
         }
         Destroy(gameObject, 0.8f);
-        GameObject.Find("GameManager").GetComponent<SpawnManager>().newDeath();
+        gameObject.GetComponent<Take_Damage>().DamageTaken(5); //added in the 
     }
 
     private void Pathfinding()

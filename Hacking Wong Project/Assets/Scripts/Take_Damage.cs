@@ -11,9 +11,14 @@ public class Take_Damage : MonoBehaviour
     float currentHealth;
     public Animator anim;
     public float deathAnimTimeInSeconds;
+    public EnemyHealth healthBar;
     void Start()
     {
         currentHealth = maxHealth;
+        if (healthBar)
+        {
+            healthBar.SetMaxHealth(currentHealth);
+        }
         script = GameObject.Find("GameManager").GetComponent<SpawnManager>();
     }
 
@@ -21,17 +26,17 @@ public class Take_Damage : MonoBehaviour
     {
         if (currentHealth>0)
         {
-
             currentHealth -= damage;
+            if (healthBar)
+            {
+                healthBar.SetHealth(currentHealth);
+            }
             anim.SetTrigger("hurt");
             anim.SetFloat("Health", currentHealth);
             if (currentHealth <= 0)
             {
-                if (gameObject.tag == "Enemy")
-                {
-                    script.newDeath();
-                    Destroy(gameObject, deathAnimTimeInSeconds);
-                }
+                script.newDeath();
+                Destroy(gameObject, deathAnimTimeInSeconds);
             }
         }
     }
