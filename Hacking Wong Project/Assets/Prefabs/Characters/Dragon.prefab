@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4cf25c4a9e8e454a9864bf65d2ee009, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 12
   rb: {fileID: 3254794655423422485}
   nextWaypointDistance: 3
   anim: {fileID: 3254794655423422491}
@@ -163,7 +163,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2983ecb016918294eae27df57b96d647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 6612244332638960732, guid: ba32beb3c39a40742896e0fea0560e5a, type: 3}
   maxHealth: 40
   anim: {fileID: 3254794655423422491}
   deathAnimTimeInSeconds: 1.08

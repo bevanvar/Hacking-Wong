@@ -10,11 +10,22 @@ public class Player_Movement : MonoBehaviour
     public Animator animator;
     private IInteractable interactable;
 
-    
+    public float maxHealth = 100f;
+    float currentHealth;
+    public HealthBar healthbar;
 
+    private void Start()
+    {
+        healthbar.SetMaxHealth(maxHealth);
+        currentHealth = maxHealth;
+    }
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            TakeDamage(10);
+        }
         if (Input.GetKeyDown(KeyCode.Space) || animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack")) //check if player is hurt or dying here
         {
             movement = Vector2.zero;
@@ -59,7 +70,17 @@ public class Player_Movement : MonoBehaviour
         }
     }
 
-
-
-
+    public void TakeDamage(float damage)
+    {
+        if(damage >= currentHealth)
+        {
+            currentHealth = 0;
+            Debug.Log("Player Dead");
+        } else
+        {
+            currentHealth -= damage;
+            Debug.Log("Player Hurt");
+        }
+        healthbar.SetHealth(currentHealth);
+    }
 }

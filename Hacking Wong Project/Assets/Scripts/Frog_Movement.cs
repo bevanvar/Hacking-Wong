@@ -22,7 +22,7 @@ public class Frog_Movement : MonoBehaviour
     public float chaseRange = 10f;
     public float attackRange = 2f;
     public float explosionRadius = 4f;
-    public float damage = 100f;
+    public float damage = 40f;
 
     public LayerMask layerMask;
     public Collider2D selfCollider;
@@ -50,6 +50,8 @@ public class Frog_Movement : MonoBehaviour
         if (anim.GetCurrentAnimatorStateInfo(0).IsTag("Dead"))
         {
             rb.velocity = Vector2.zero;
+            if(!firstTimePath)
+                Explode();
             return;
         }
         if (target.position.x <= rb.position.x) anim.SetBool("isRight", false);

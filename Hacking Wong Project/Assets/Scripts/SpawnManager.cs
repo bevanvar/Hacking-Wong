@@ -11,13 +11,15 @@ public class SpawnManager : MonoBehaviour
     public int xPos;
     public int yPos;
     private int enemyCount = 0;
-    public Transform target;
+    Transform target;
     private int waveCount = 0;
     private int deathCount = 0;
     private bool enemies = false;
 
     private void Start()
     {
+        GameObject g = GameObject.FindGameObjectWithTag("Player");
+        target = g.transform;
         StartCoroutine(enemyDrop());
     }
 
@@ -41,7 +43,6 @@ public class SpawnManager : MonoBehaviour
                 //number of enemies spawned = wave number
                 for (int i = 0; i < waveCount; i++)
                 {
-                    Debug.Log("Wave " + waveCount);
                     generateValidPos();
                     int enemyType = Random.Range(1, 4);
                     if (enemyType == 1)
@@ -57,14 +58,12 @@ public class SpawnManager : MonoBehaviour
                         Instantiate(enemy3, new Vector3(xPos, yPos, 0), Quaternion.identity);
                     }
                     enemyCount += 1;
-                    Debug.Log("E " + enemyCount + " D " + deathCount);
                     enemies = true;
                     //wait 2 seconds before spawning next enemy
                     //yield return new WaitForSeconds(2f);
                 }
             }        
         }
-        Debug.Log("Finished waves");
         //check if all enemies are killed
         //instantiate arrow
         while(true)
