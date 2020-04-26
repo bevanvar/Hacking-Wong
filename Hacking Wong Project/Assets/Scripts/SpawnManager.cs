@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+//reference: https://www.youtube.com/watch?v=26d1uZ7yrfY
 
 public class SpawnManager : MonoBehaviour
 {
@@ -16,11 +18,21 @@ public class SpawnManager : MonoBehaviour
     private int deathCount = 0;
     private bool enemies = false;
 
+    public Animator screenTransitionAnim;
+    public float transitionTime = 2f;
     private void Start()
     {
         GameObject g = GameObject.FindGameObjectWithTag("Player");
         target = g.transform;
         StartCoroutine(enemyDrop());
+    }
+
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            StartCoroutine(LoadLevelNext(SceneManager.GetActiveScene().buildIndex + 1));
+        }
     }
 
     IEnumerator enemyDrop()
@@ -99,6 +111,18 @@ public class SpawnManager : MonoBehaviour
         deathCount += 1;
         if (deathCount == enemyCount) enemies = false;
         else enemies = true;
+    }
+
+    public void OnArrowTouch()
+    {
+        StartCoroutine(LoadLevelNext(SceneManager.GetActiveScene().buildIndex + 1));
+    }
+
+    IEnumerator LoadLevelNext(int level)
+    {
+        screenTransitionAnim.SetTrigger("SceneEnd");
+        yield return new WaitForSeconds(transitionTime);
+        SceneManager.LoadScene(level);
     }
 
 }
