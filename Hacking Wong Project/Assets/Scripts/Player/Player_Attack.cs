@@ -27,6 +27,10 @@ public class Player_Attack : MonoBehaviour
 
     void Attack()
     {
+        if (animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
+        {
+            return;
+        }
         animator.SetTrigger("Attack"); //include attackTimer later
 
         //Detect enemies in range
