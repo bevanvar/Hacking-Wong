@@ -39,7 +39,16 @@ public class Player_Attack : MonoBehaviour
         //hurt enemies
         foreach (Collider2D enemy in hitEnemies)
         {
-            enemy.GetComponent<Take_Damage>().DamageTaken(attackDamage);
+            if(enemy.gameObject.tag == "Enemy")
+            {
+                enemy.GetComponent<Take_Damage>().DamageTaken(attackDamage);
+            } else if(enemy.gameObject.tag == "Boss")
+            {
+                enemy.GetComponent<BossDamage>().Damage(attackDamage);
+            } else
+            {
+                Destroy(enemy);
+            }
         }
     }
 

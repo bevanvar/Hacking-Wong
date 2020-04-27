@@ -1,0 +1,36 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class BossDamage : MonoBehaviour
+{
+    public EnemyHealth healthBar;
+    public float maxHealth = 50f;
+    float currentHealth;
+    public Animator anim;
+    public float delayDestroy = 1f;
+    // Start is called before the first frame update
+    void Start()
+    {
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(currentHealth);
+
+    }
+
+    public void Damage(float damage)
+    {
+        if (currentHealth > 0)
+        {
+            currentHealth -= damage;
+            currentHealth = currentHealth < 0 ? 0 : currentHealth;
+            healthBar.SetHealth(currentHealth);
+            if (currentHealth <= 0)
+            {
+                anim.SetTrigger("Dead");
+                anim.SetBool("isDead", true);
+                Destroy(gameObject, delayDestroy);
+            }
+        }
+    }
+}

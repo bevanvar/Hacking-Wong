@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2628585960297665148}
   - component: {fileID: 1000286592787928389}
   - component: {fileID: 797331083456063077}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Dragon_Fire
   m_TagString: Projectile_Enemy
   m_Icon: {fileID: 0}

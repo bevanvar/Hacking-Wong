@@ -22,6 +22,10 @@ public class Bullet_Script : MonoBehaviour
         {
             collision.gameObject.GetComponent<Take_Damage>().DamageTaken(bulletDamage);
         }
+        else if (collision.gameObject.tag == "Boss")
+        {
+            collision.gameObject.GetComponent<BossDamage>().Damage(bulletDamage);
+        }
         Instantiate(explosionEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
