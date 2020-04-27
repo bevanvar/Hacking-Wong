@@ -10,16 +10,20 @@ public class SpawnManager : MonoBehaviour
     public GameObject enemy2;
     public GameObject enemy3;
     public GameObject spawnFinished;
-    public int xPos;
-    public int yPos;
+    private float xPos;
+    private float yPos;
+    public int waveLimit;
     private int enemyCount = 0;
     Transform target;
     private int waveCount = 0;
     private int deathCount = 0;
     private bool enemies = false;
-
+    public Vector2[] spawnPositions;
+    private List<int> usedPositions = new List<int>();
     public Animator screenTransitionAnim;
     public float transitionTime = 2f;
+    public float arrowX;
+
     private void Start()
     {
         GameObject g = GameObject.FindGameObjectWithTag("Player");
@@ -39,7 +43,7 @@ public class SpawnManager : MonoBehaviour
     {
         //wait a second after level starts
         yield return new WaitForSeconds(1f);
-        while(waveCount<3)
+        while(waveCount<waveLimit)
         {
             //if enemies present
             if(enemies)
@@ -74,6 +78,7 @@ public class SpawnManager : MonoBehaviour
                     //wait 2 seconds before spawning next enemy
                     //yield return new WaitForSeconds(2f);
                 }
+                usedPositions.Clear();
             }        
         }
         //check if all enemies are killed
@@ -86,21 +91,22 @@ public class SpawnManager : MonoBehaviour
                 yield return new WaitForSeconds(2f);
             }
         }
-        Instantiate(spawnFinished, new Vector3(20, 0, 0), Quaternion.identity);
+        Instantiate(spawnFinished, new Vector3(arrowX, 0, 0), Quaternion.identity);
     }
 
     //function to generate a valid spawn position
     void generateValidPos()
     {
         int flag = 0;
-        xPos = Random.Range(-14, 12);
-        yPos = Random.Range(-5, 6);
-        Vector2 pos = new Vector2(xPos, yPos);
-        float distance = Vector2.Distance(pos, target.position);
-        if (distance >= 12f)
+        int positionNumber = Random.Range(0, spawnPositions.Length);
+        float distance = Vector2.Distance(spawnPositions[positionNumber], target.position);
+        if (distance >= 12f && !usedPositions.Contains(positionNumber))
         {
-            if (xPos >= -14 && xPos <= -1 && yPos >= 0 && yPos <= 5) flag = 1;
-            if (xPos >= -4 && xPos <= 11 && yPos >= -5 && yPos <= -1) flag = 1;
+            flag = 1;
+            xPos = spawnPositions[positionNumber].x;
+            yPos = spawnPositions[positionNumber].y;
+            usedPositions.Add(positionNumber);
+            return;
         }
         if (flag == 0) generateValidPos();
     }
@@ -109,6 +115,7 @@ public class SpawnManager : MonoBehaviour
     public void newDeath()
     {
         deathCount += 1;
+        Debug.Log(deathCount);
         if (deathCount == enemyCount) enemies = false;
         else enemies = true;
     }

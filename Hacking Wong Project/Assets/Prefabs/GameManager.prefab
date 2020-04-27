@@ -550,7 +550,28 @@ MonoBehaviour:
   enemy3: {fileID: 3254794655423422488, guid: 21964bb79eebd7141867aedaf79505da, type: 3}
   spawnFinished: {fileID: 7329347092284256243, guid: 7500536ac270fdc4a8e1691f75e6540c,
     type: 3}
-  xPos: 0
-  yPos: 0
-  screenTransitionTime: 0
+  waveLimit: 5
+  spawnPositions:
+  - {x: -14.7, y: 5.2}
+  - {x: -11.77, y: -0.35}
+  - {x: -8.9, y: 3.16}
+  - {x: -6.44, y: 4.68}
+  - {x: -3.63, y: 1.69}
+  - {x: -2.34, y: -5.45}
+  - {x: 2.57, y: -1.65}
+  - {x: 6.2, y: -5.75}
+  - {x: 9.53, y: -1.13}
+  - {x: 12.23, y: 2.97}
+  - {x: -13.76, y: 2}
+  - {x: -10, y: 1.64}
+  - {x: -4.92, y: 2.98}
+  - {x: -2.05, y: -0.18}
+  - {x: 0.29, y: -3}
+  - {x: 3.86, y: -3.41}
+  - {x: -18.26, y: -2.4}
+  - {x: 14.64, y: 3.5}
+  - {x: -17.9, y: -5}
+  - {x: 15.34, y: -0.76}
   screenTransitionAnim: {fileID: 2037163878}
+  transitionTime: 2
+  arrowX: 20
