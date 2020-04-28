@@ -12,7 +12,7 @@ public class Player_Movement : MonoBehaviour
     private IInteractable interactable;
 
     public float maxHealth = 100f;
-    float currentHealth;
+    public float currentHealth;
     public HealthBar healthbar;
 
     private void Start()
