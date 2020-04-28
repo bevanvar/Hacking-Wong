@@ -21,8 +21,7 @@ public class BossIdle : StateMachineBehaviour
     {
         if (Time.time >= timer + idleTime && !animator.GetBool("isDead"))
         {
-            //int random = Mathf.FloorToInt(Random.Range(0, 3));
-            int random = 2;
+            int random = Mathf.FloorToInt(Random.Range(0, 3));
             Transform boss = animator.transform;
             switch (random)
             {
