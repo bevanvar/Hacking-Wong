@@ -27,7 +27,7 @@ public class Player_Attack : MonoBehaviour
 
     void Attack()
     {
-        if (animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
+        if (animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack") || animator.GetCurrentAnimatorStateInfo(0).IsTag("Hurt"))
         {
             return;
         }

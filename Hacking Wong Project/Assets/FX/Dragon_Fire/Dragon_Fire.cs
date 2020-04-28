@@ -7,6 +7,7 @@ using UnityEngine;
 public class Dragon_Fire : MonoBehaviour
 {
     public float damage;
+    public GameObject explosion;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +23,10 @@ public class Dragon_Fire : MonoBehaviour
         if(other.tag == "Player")
         {
             other.GetComponent<Player_Movement>().TakeDamage(damage);
+            Destroy(Instantiate(explosion, other.transform.position, Quaternion.identity), 0.65f);
         }
+        else
+            Destroy(Instantiate(explosion, transform.position, Quaternion.identity), 0.65f);
         Destroy(gameObject);
     }
 }
