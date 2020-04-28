@@ -164,3 +164,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
+  explosion: {fileID: 2012705111173235801, guid: 21524d23b25a0334995b648fc1a39471,
+    type: 3}

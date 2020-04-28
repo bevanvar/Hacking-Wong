@@ -21,14 +21,15 @@ public class BossIdle : StateMachineBehaviour
     {
         if (Time.time >= timer + idleTime && !animator.GetBool("isDead"))
         {
-            int random = Mathf.FloorToInt(Random.Range(0, 2));
+            //int random = Mathf.FloorToInt(Random.Range(0, 3));
+            int random = 2;
+            Transform boss = animator.transform;
             switch (random)
             {
                 case 0: 
                     animator.SetTrigger("Discharge");
                     break;
                 case 1: 
-                    Transform boss = animator.transform;
                     if(boss.position.x > target.position.x+2)
                     {
                         animator.SetBool("playerIsRight", false);
@@ -37,6 +38,17 @@ public class BossIdle : StateMachineBehaviour
                         animator.SetBool("playerIsRight", true);
                     }
                     animator.SetTrigger("Shoot");
+                    break;
+                case 2:
+                    if (boss.position.x > target.position.x + 2)
+                    {
+                        animator.SetBool("playerIsRight", false);
+                    }
+                    else if (boss.position.x + 2 < target.position.x)
+                    {
+                        animator.SetBool("playerIsRight", true);
+                    }
+                    animator.SetTrigger("Tracker");
                     break;
             }
         }
