@@ -391,8 +391,40 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6612244332638960733, guid: ba32beb3c39a40742896e0fea0560e5a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba32beb3c39a40742896e0fea0560e5a, type: 3}
+--- !u!1 &592028907 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6612244332638960732, guid: ba32beb3c39a40742896e0fea0560e5a,
+    type: 3}
+  m_PrefabInstance: {fileID: 592028906}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &592028908 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2037163878, guid: ba32beb3c39a40742896e0fea0560e5a,
+    type: 3}
+  m_PrefabInstance: {fileID: 592028906}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &592028909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592028907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8412f2509fe9f8f41b423e8d76a37a19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transitionTime: 2
+  screenTransitionAnim: {fileID: 592028908}
+  keyObj: {fileID: 7329347092284256243, guid: 7500536ac270fdc4a8e1691f75e6540c, type: 3}
 --- !u!1001 &638802349
 PrefabInstance:
   m_ObjectHideFlags: 0

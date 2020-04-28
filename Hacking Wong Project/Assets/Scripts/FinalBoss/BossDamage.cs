@@ -10,12 +10,13 @@ public class BossDamage : MonoBehaviour
     float currentHealth;
     public Animator anim;
     public float delayDestroy = 1f;
+    BossBattle bb;
     // Start is called before the first frame update
     void Start()
     {
+        bb = GameObject.Find("GameManager").GetComponent<BossBattle>();
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(currentHealth);
-
     }
 
     public void Damage(float damage)
@@ -30,6 +31,7 @@ public class BossDamage : MonoBehaviour
                 anim.SetTrigger("Dead");
                 anim.SetBool("isDead", true);
                 Destroy(gameObject, delayDestroy);
+                bb.BossIsDead();
             }
         }
     }

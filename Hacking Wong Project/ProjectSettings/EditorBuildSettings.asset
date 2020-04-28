@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene 4_Lab.unity
     guid: dc99d004c324e504d8e3cc6ab1912cfc
+  - enabled: 1
+    path: Assets/Scenes/DeathScene.unity
+    guid: a2cbf2471ed86804cbef5002f3e1ff94
   m_configObjects: {}
