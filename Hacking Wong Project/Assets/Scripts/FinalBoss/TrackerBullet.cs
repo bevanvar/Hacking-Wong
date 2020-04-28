@@ -37,7 +37,13 @@ public class TrackerBullet : MonoBehaviour
             Destroy(Instantiate(explosion, other.transform.position, Quaternion.identity), 0.45f);
         }
         else
+        {
             Destroy(Instantiate(explosion, transform.position, Quaternion.identity), 0.45f);
+            if (other.tag == "Gun")
+            {
+                Destroy(other.gameObject);
+            }
+        }
         Destroy(gameObject);
     }
 }

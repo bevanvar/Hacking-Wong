@@ -4,16 +4,22 @@ public class WeaponSwitching : MonoBehaviour
 {
     public int selectedWeapon;
     public Transform crossHair;
+    Animator animator;
     // Start is called before the first frame update
     void Start()
     {
         selectedWeapon = 0;
         SelectWeapon();
+        animator = GetComponentInParent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack") || animator.GetCurrentAnimatorStateInfo(0).IsTag("Hurt"))
+        {
+            return;
+        }
         if (Input.GetKeyDown(KeyCode.LeftControl))
         {
             if (selectedWeapon <= 0)

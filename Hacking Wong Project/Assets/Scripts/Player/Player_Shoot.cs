@@ -15,6 +15,10 @@ public class Player_Shoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (anim.GetCurrentAnimatorStateInfo(0).IsTag("Attack") || anim.GetCurrentAnimatorStateInfo(0).IsTag("Hurt"))
+        {
+            return;
+        }
         if (Input.GetKeyDown(KeyCode.Space))
         {
             shootDirection = crosshair.position - shootPoint.position;
