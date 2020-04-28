@@ -8,14 +8,18 @@ public class Boar_Movement : MonoBehaviour
     private float speed = 6f;
     public Rigidbody2D rb;
     Transform target;
-    public float nextWaypointDistance = 3f;
+    public float nextWaypointDistance = 2f;
     Path path;
     private int currentWaypoint;
     Seeker seeker;
     public Animator anim;
     private bool firstTimePath = false;
     public float chaseRange = 12f;
-    public float attackRange = 2f;
+    public float attackRange;
+    private bool waiting = false;
+    public GameObject attackAnim;
+    public float damage;
+    private GameObject player;
 
     private enum State
     {
@@ -27,8 +31,8 @@ public class Boar_Movement : MonoBehaviour
     private void Start()
     {
 
-        GameObject g = GameObject.FindGameObjectWithTag("Player");
-        target = g.transform;
+        player = GameObject.FindGameObjectWithTag("Player");
+        target = player.transform;
         seeker = GetComponent<Seeker>();
         state = State.Idle;
     }
@@ -49,10 +53,14 @@ public class Boar_Movement : MonoBehaviour
                 anim.SetFloat("Vertical", 0f);
                 anim.SetFloat("Speed", 0f);
                 anim.SetBool("isRight", false);
-                if (Vector2.Distance(rb.position, target.position)<attackRange)
+                if(waiting)
+                {
+                    break;
+                }
+                /*if (Vector2.Distance(rb.position, target.position)<attackRange)
                 {
                     StartCoroutine(waiter());
-                }
+                }*/
                 else if(Vector2.Distance(rb.position, target.position)<=chaseRange)
                 {
                     state = State.Chasing;
@@ -62,7 +70,7 @@ public class Boar_Movement : MonoBehaviour
             case State.Chasing:
                 speed = 6f;
                 float distance = Vector2.Distance(rb.position, target.position);
-                if (distance>=attackRange && distance<=chaseRange)
+                if (distance>attackRange && distance<=chaseRange)
                 {
                     if (firstTimePath)
                     {
@@ -74,19 +82,29 @@ public class Boar_Movement : MonoBehaviour
                     else speed = 6f;
                     Pathfinding();
                 }
-                if (distance<attackRange || distance>chaseRange)
+                else if (distance>chaseRange)
                 {
                     state = State.Idle;
                     firstTimePath = false;
+                }
+                else if (distance<=attackRange)
+                {
+                    StartCoroutine(Attack());
                 }
             break;
         }
     }
 
-    IEnumerator waiter()
+    IEnumerator Attack()
     {
-        yield return new WaitForSeconds(3);
+        GameObject clone = (GameObject) Instantiate(attackAnim, new Vector3((target.position.x + rb.position.x) / 2, (target.position.y + rb.position.y) / 2, 2), Quaternion.identity);
+        Destroy(clone, 1.0f);
+        player.GetComponent<Player_Movement>().TakeDamage(damage);
+        waiting = true;
+        state = State.Idle;
+        yield return new WaitForSeconds(2);
         state = State.Chasing;
+        waiting = false;
         firstTimePath = true;
     }
 

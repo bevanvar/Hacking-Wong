@@ -269,10 +269,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 6071129139633162206}
-  nextWaypointDistance: 3
+  nextWaypointDistance: 2
   anim: {fileID: 6071129139633162205}
   chaseRange: 12
-  attackRange: 2
+  attackRange: 2.5
+  attackAnim: {fileID: 5527823758626115093, guid: b0cf75b8d1371064a957df526ccc7372,
+    type: 3}
+  damage: 15
 --- !u!95 &6071129139633162205
 Animator:
   serializedVersion: 3
