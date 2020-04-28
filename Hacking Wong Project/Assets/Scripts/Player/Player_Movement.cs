@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player_Movement : MonoBehaviour
 {
@@ -71,13 +72,20 @@ public class Player_Movement : MonoBehaviour
         if (animator.GetCurrentAnimatorStateInfo(0).IsTag("Hurt")) return;
         if(damage >= currentHealth)
         {
+            animator.SetTrigger("Hurt");
             currentHealth = 0;
-            Debug.Log("Player dead");
+            StartCoroutine(DeadLoad());
         } else
         {
             currentHealth = currentHealth - damage;
             animator.SetTrigger("Hurt");
         }
         healthbar.SetHealth(currentHealth);
+    }
+
+    IEnumerator DeadLoad()
+    {
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene("DeathScene");
     }
 }
