@@ -14,10 +14,6 @@ public class Pickup : MonoBehaviour
         healthValues = FindObjectOfType<Player_Movement>();
     }
 
-    void Update(){
-        Debug.Log("ERROR");
-    }
-
     void OnTriggerEnter2D(Collider2D col){
         
 
@@ -25,6 +21,7 @@ public class Pickup : MonoBehaviour
             if(healthValues.currentHealth<healthValues.maxHealth){
                 Destroy(gameObject);
                 healthValues.currentHealth = healthValues.currentHealth + healthBonus;
+                healthValues.currentHealth = healthValues.currentHealth > 100 ? 100 : healthValues.currentHealth;
                 playerHealth.SetHealth(healthValues.currentHealth);
         }
     }

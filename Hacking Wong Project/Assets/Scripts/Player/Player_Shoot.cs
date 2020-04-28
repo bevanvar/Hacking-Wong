@@ -11,15 +11,13 @@ public class Player_Shoot : MonoBehaviour
     public Transform crosshair;
     public Animator anim;
     Vector2 shootDirection;
+    public float timeBwShots = 0.3f;
+    float timer = 0;
 
     // Update is called once per frame
     void Update()
     {
-        if (anim.GetCurrentAnimatorStateInfo(0).IsTag("Attack") || anim.GetCurrentAnimatorStateInfo(0).IsTag("Hurt"))
-        {
-            return;
-        }
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && Time.time>timer)
         {
             shootDirection = crosshair.position - shootPoint.position;
             if (shootDirection.x > 0)
@@ -32,6 +30,7 @@ public class Player_Shoot : MonoBehaviour
             }
             anim.SetTrigger("Shoot");
             Shoot();
+            timer = Time.time + timeBwShots;
         }
     }
 

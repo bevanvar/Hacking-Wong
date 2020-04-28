@@ -811,6 +811,7 @@ MonoBehaviour:
   force: 15
   crosshair: {fileID: 1973593348}
   anim: {fileID: 8495491971243933088}
+  timeBwShots: 0.15
 --- !u!1 &8495491970570721276
 GameObject:
   m_ObjectHideFlags: 0
@@ -984,6 +985,7 @@ MonoBehaviour:
   rb: {fileID: 8495491971243933092}
   animator: {fileID: 8495491971243933088}
   maxHealth: 100
+  currentHealth: 0
   healthbar: {fileID: 2024772176}
 --- !u!95 &8495491971243933088
 Animator:
