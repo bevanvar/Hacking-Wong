@@ -11,14 +11,15 @@ public class Player_Movement : MonoBehaviour
     public Animator animator;
     private IInteractable interactable;
 
-    public float maxHealth = 100f;
-    public float currentHealth;
+    static public float maxHealth = 100f;
+    static public float currentHealth = maxHealth;
     public HealthBar healthbar;
 
     private void Start()
     {
         healthbar.SetMaxHealth(maxHealth);
-        currentHealth = maxHealth;
+        //currentHealth = maxHealth;
+        healthbar.SetHealth(currentHealth);
     }
     // Update is called once per frame
     void Update()

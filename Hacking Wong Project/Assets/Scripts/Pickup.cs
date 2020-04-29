@@ -5,9 +5,9 @@ using UnityEngine;
 public class Pickup : MonoBehaviour
 {
     HealthBar playerHealth;
-    Player_Movement healthValues;
 
     public float healthBonus = 50f;
+    public Player_Movement healthValues;
 
     void Start(){
         playerHealth = FindObjectOfType<HealthBar>();
@@ -18,11 +18,11 @@ public class Pickup : MonoBehaviour
         
 
         if (col.CompareTag("Player")){ 
-            if(healthValues.currentHealth<healthValues.maxHealth){
+            if(Player_Movement.currentHealth<Player_Movement.maxHealth){
                 Destroy(gameObject);
-                healthValues.currentHealth = healthValues.currentHealth + healthBonus;
-                healthValues.currentHealth = healthValues.currentHealth > 100 ? 100 : healthValues.currentHealth;
-                playerHealth.SetHealth(healthValues.currentHealth);
+                Player_Movement.currentHealth = Player_Movement.currentHealth + healthBonus;
+                Player_Movement.currentHealth = Player_Movement.currentHealth > 100 ? 100 : Player_Movement.currentHealth;
+                playerHealth.SetHealth(Player_Movement.currentHealth);
         }
     }
     }
