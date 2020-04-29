@@ -12,10 +12,12 @@ public class LevelProgress : MonoBehaviour
         {
             if (SceneManager.sceneCountInBuildSettings - 2 == SceneManager.GetActiveScene().buildIndex)
             {
+                Animator anim = GameObject.Find("SceneTransition").GetComponent<Animator>();
+                anim.SetTrigger("SceneEnd");
                 TimeManager.timeKeeper = 0;
                 TimeManager.timeScore = 0;
                 Player_Movement.currentHealth = Player_Movement.maxHealth;
-                SceneManager.LoadScene(0);
+                StartCoroutine(LoadLevel());
                 return;
             }
             else
@@ -26,4 +28,10 @@ public class LevelProgress : MonoBehaviour
 
         }
    }
+
+    IEnumerator LoadLevel()
+    {
+        yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene(0);
+    }
 }
