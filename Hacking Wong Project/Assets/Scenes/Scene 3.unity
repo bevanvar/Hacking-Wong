@@ -424,7 +424,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transitionTime: 2
   screenTransitionAnim: {fileID: 592028908}
-  keyObj: {fileID: 7329347092284256243, guid: 7500536ac270fdc4a8e1691f75e6540c, type: 3}
+  keyObj: {fileID: 1623640941526444852, guid: c7f4993c8869741419ead495667688fb, type: 3}
 --- !u!1001 &638802349
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5527,6 +5527,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Final Boss
+      objectReference: {fileID: 0}
+    - target: {fileID: 5826950899522458902, guid: 60cf1baff2c507940baa769d36d5ffaf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5826950899522458987, guid: 60cf1baff2c507940baa769d36d5ffaf,
         type: 3}

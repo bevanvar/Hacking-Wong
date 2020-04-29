@@ -102,7 +102,7 @@ public class Boar_Movement : MonoBehaviour
         player.GetComponent<Player_Movement>().TakeDamage(damage);
         waiting = true;
         state = State.Idle;
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(3.25f);
         state = State.Chasing;
         waiting = false;
         firstTimePath = true;
