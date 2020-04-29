@@ -18,7 +18,6 @@ public class Player_Movement : MonoBehaviour
     private void Start()
     {
         healthbar.SetMaxHealth(maxHealth);
-        //currentHealth = maxHealth;
         healthbar.SetHealth(currentHealth);
     }
     // Update is called once per frame
