@@ -9,10 +9,6 @@ public class BossIdle : StateMachineBehaviour
     Transform target;
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        if (animator.GetBool("isDead"))
-        {
-            Debug.Log("Explosions go booom"); //instantiate big boy explosion here
-        }
         timer = Time.time;
         target = GameObject.FindGameObjectWithTag("Player").transform;
     }

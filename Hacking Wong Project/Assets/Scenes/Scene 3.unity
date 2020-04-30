@@ -539,6 +539,8 @@ MonoBehaviour:
   transitionTime: 2
   screenTransitionAnim: {fileID: 592028908}
   keyObj: {fileID: 1623640941526444852, guid: c7f4993c8869741419ead495667688fb, type: 3}
+  explosion: {fileID: 8198466484492553985, guid: 45a54763b1bbe1b41b85db87c80cb5b3,
+    type: 3}
 --- !u!1001 &638802349
 PrefabInstance:
   m_ObjectHideFlags: 0

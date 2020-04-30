@@ -32,6 +32,7 @@ public class BossDamage : MonoBehaviour
                 anim.SetBool("isDead", true);
                 Destroy(gameObject, delayDestroy);
                 bb.BossIsDead();
+                bb.InstantiateExplosions();
             }
         }
     }
