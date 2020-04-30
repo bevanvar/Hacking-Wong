@@ -23,6 +23,7 @@ public class SpawnManager : MonoBehaviour
     public Animator screenTransitionAnim;
     public float transitionTime = 2f;
     public float arrowX;
+    public float arrowY;
 
     private void Start()
     {
@@ -91,7 +92,7 @@ public class SpawnManager : MonoBehaviour
                 yield return new WaitForSeconds(2f);
             }
         }
-        Instantiate(spawnFinished, new Vector3(arrowX, 0, 0), Quaternion.identity);
+        Instantiate(spawnFinished, new Vector3(arrowX, arrowY, 0), Quaternion.identity);
     }
 
     //function to generate a valid spawn position
