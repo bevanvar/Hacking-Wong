@@ -12,6 +12,11 @@ public class HighScore : MonoBehaviour
     {
         text.enabled = false;
         float score = PlayerPrefs.GetFloat("HighScore", 0);
+        float scoreNow = TimeManager.timeKeeper * 10 + Player_Movement.currentHealth / Player_Movement.maxHealth * 1500 + 350;
+        if (score < scoreNow)
+        {
+            score = scoreNow;
+        }
         text.text = "High score: " + score;
     }
 
