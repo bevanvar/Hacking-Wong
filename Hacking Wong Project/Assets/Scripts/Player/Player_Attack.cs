@@ -8,26 +8,20 @@ public class Player_Attack : MonoBehaviour
 
     public Transform attackPoint;
     public float attackRange;
-    public float attackRate;
     public float attackDamage;
     public LayerMask enemyLayer;
-    float nextAttackTime = 0f;
 
     void Update()
     {
-        if (Time.time >= nextAttackTime)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                Attack();
-                nextAttackTime = Time.time + 1 / attackRate;
-            }
-        }           
+            Attack();
+        }         
     }
 
     void Attack()
     {
-        if (animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack") || animator.GetCurrentAnimatorStateInfo(0).IsTag("Hurt"))
+        if (animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack")) //|| animator.GetCurrentAnimatorStateInfo(0).IsTag("Hurt"))
         {
             return;
         }

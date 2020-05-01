@@ -14,7 +14,7 @@ public class Bullet_Script : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "Projectile_Enemy")
+        if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "Projectile_Enemy" || collision.tag == "GameController")
         {
             return;
         }
