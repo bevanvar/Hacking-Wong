@@ -2797,6 +2797,11 @@ PrefabInstance:
       propertyPath: arrowY
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6612244332638960733, guid: ba32beb3c39a40742896e0fea0560e5a,
+        type: 3}
+      propertyPath: waveLimit
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba32beb3c39a40742896e0fea0560e5a, type: 3}
 --- !u!4 &1421720974 stripped

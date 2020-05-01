@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 142db7240c3078d4ba3347bf6cde45ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 5
   rb: {fileID: 9008559427334010611}
   nextWaypointDistance: 3
   anim: {fileID: 9008559427334010612}
@@ -166,6 +166,7 @@ MonoBehaviour:
   maxHealth: 5
   anim: {fileID: 9008559427334010612}
   deathAnimTimeInSeconds: 0.778
+  healthBar: {fileID: 0}
 --- !u!58 &9214371774039811505
 CircleCollider2D:
   m_ObjectHideFlags: 0
