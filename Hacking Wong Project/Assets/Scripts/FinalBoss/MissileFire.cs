@@ -8,7 +8,7 @@ public class MissileFire : MonoBehaviour
     public GameObject explosion;
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Enemy" || other.tag == "Projectile_Enemy" || other.tag == "Gun" || other.tag == "Boss")
+        if (other.tag == "Enemy" || other.tag == "Projectile_Enemy" || other.tag == "Gun" || other.tag == "Boss" || other.tag == "GameController")
         {
             return;
         }

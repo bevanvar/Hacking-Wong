@@ -16,7 +16,7 @@ public class Dragon_Fire : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Enemy" || other.tag == "Projectile_Enemy")
+        if(other.tag == "Enemy" || other.tag == "Projectile_Enemy" || other.tag == "GameController")
         {
             return;
         }

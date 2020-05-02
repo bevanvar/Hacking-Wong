@@ -400,7 +400,7 @@ MonoBehaviour:
   rb: {fileID: 3254794655423422485}
   nextWaypointDistance: 3
   anim: {fileID: 3254794655423422491}
-  attackRange: 14
+  attackRange: 16
   shootRange: 6
   fireRate: 0.5
   shootPoint: {fileID: 8198855974704921129}

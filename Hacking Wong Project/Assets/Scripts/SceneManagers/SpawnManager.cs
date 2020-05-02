@@ -89,7 +89,7 @@ public class SpawnManager : MonoBehaviour
             if (!enemies) break;
             else
             {
-                yield return new WaitForSeconds(2f);
+                yield return new WaitForSeconds(1f);
             }
         }
         Instantiate(spawnFinished, new Vector3(arrowX, arrowY, 0), Quaternion.identity);

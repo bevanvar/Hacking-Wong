@@ -301,7 +301,10 @@ MonoBehaviour:
 
 
     >
-    Green potions will replenish your health'
+    Use ESC to pause
+
+
+    > Green potions will replenish your health'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -648,7 +651,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -9.15, y: -151}
+  m_AnchoredPosition: {x: -9.15, y: -189}
   m_SizeDelta: {x: 18.3, y: -55.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &347963971
