@@ -25,6 +25,11 @@ public class PauseButton : MonoBehaviour
                 Pause();
             }
         }
+
+        if(Input.GetKeyDown(KeyCode.Q) && isPaused)
+        {
+            LoadMenu();
+        }
     }
     public void LoadMenu()
     {
@@ -36,9 +41,9 @@ public class PauseButton : MonoBehaviour
     }
     public void Resume()
     {
+        Time.timeScale = 1f;
         pauseMenu.SetActive(false);
         isPaused = false;
-        Time.timeScale = 1f;
     }
 
     void Pause()
