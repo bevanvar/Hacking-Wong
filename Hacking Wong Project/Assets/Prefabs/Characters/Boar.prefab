@@ -268,12 +268,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3d15fd660457424c8bdec029d8752e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  chaseSpeed: 5.5
+  attackSpeed: 6
+  timeBwAttack: 3
   rb: {fileID: 6071129139633162206}
   nextWaypointDistance: 2
   anim: {fileID: 6071129139633162205}
-  chaseRange: 12
-  attackRange: 2.5
+  chaseRange: 18
+  attackRange: 4
   attackAnim: {fileID: 5527823758626115093, guid: b0cf75b8d1371064a957df526ccc7372,
     type: 3}
   damage: 15

@@ -220,7 +220,8 @@ PrefabInstance:
     - target: {fileID: 3565116847824288563, guid: 903dd5c19f312eb46b4259ee95c474ab,
         type: 3}
       propertyPath: messageToDisplay
-      value: Lorem Ipsum blah bah
+      value: 'Phew, i made it just it time. Wonder what happened to TA Marco though...I
+        hope he''s okay '
       objectReference: {fileID: 0}
     - target: {fileID: 3565116847824288564, guid: 903dd5c19f312eb46b4259ee95c474ab,
         type: 3}

@@ -5880,6 +5880,13 @@ PrefabInstance:
       propertyPath: text
       value: 
       objectReference: {fileID: 1335256739}
+    - target: {fileID: 3565116847824288563, guid: 903dd5c19f312eb46b4259ee95c474ab,
+        type: 3}
+      propertyPath: messageToDisplay
+      value: Oh no, the lab was locked! Gotta go search for the key. But where did
+        all these animals come from? Guess I'll have to defeat them all before I
+        can leave...
+      objectReference: {fileID: 0}
     - target: {fileID: 3565116847824288564, guid: 903dd5c19f312eb46b4259ee95c474ab,
         type: 3}
       propertyPath: m_LocalPosition.x

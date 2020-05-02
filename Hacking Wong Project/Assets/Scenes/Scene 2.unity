@@ -1649,6 +1649,13 @@ PrefabInstance:
       propertyPath: text
       value: 
       objectReference: {fileID: 1313148285}
+    - target: {fileID: 3565116847824288563, guid: 903dd5c19f312eb46b4259ee95c474ab,
+        type: 3}
+      propertyPath: messageToDisplay
+      value: I think I saw TA Marco heading towards Centennial Campus.He should definitely
+        have the keys. I'll have to defeat these animals fast so I can catch up to
+        him...
+      objectReference: {fileID: 0}
     - target: {fileID: 3565116847824288564, guid: 903dd5c19f312eb46b4259ee95c474ab,
         type: 3}
       propertyPath: m_LocalPosition.x

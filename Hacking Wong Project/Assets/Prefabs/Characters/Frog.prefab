@@ -143,7 +143,7 @@ MonoBehaviour:
   rb: {fileID: 9008559427334010611}
   nextWaypointDistance: 3
   anim: {fileID: 9008559427334010612}
-  chaseRange: 10
+  chaseRange: 15
   attackRange: 2
   explosionRadius: 4
   damage: 40

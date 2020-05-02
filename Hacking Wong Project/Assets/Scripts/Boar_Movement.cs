@@ -5,7 +5,11 @@ using System.Collections.Generic;
 
 public class Boar_Movement : MonoBehaviour
 {
-    public float speed = 3f;
+
+    public float chaseSpeed = 3f;
+    public float attackSpeed = 4f;
+    public float timeBwAttack = 3f;
+    private float speed;
     public Rigidbody2D rb;
     Transform target;
     public float nextWaypointDistance = 2f;
@@ -68,7 +72,7 @@ public class Boar_Movement : MonoBehaviour
                 }
             break;
             case State.Chasing:
-                speed = 3f;
+                speed = chaseSpeed;
                 float distance = Vector2.Distance(rb.position, target.position);
                 if (distance>attackRange && distance<=chaseRange)
                 {
@@ -78,8 +82,7 @@ public class Boar_Movement : MonoBehaviour
                         firstTimePath = false;
                         currentWaypoint = 0;
                     }
-                    if (distance<6) speed = 4f;
-                    else speed = 3f;
+                    speed = chaseSpeed;
                     Pathfinding();
                 }
                 else if (distance>chaseRange)
@@ -89,6 +92,7 @@ public class Boar_Movement : MonoBehaviour
                 }
                 else if (distance<=attackRange)
                 {
+                    speed = attackSpeed;
                     StartCoroutine(Attack());
                 }
             break;
@@ -102,7 +106,7 @@ public class Boar_Movement : MonoBehaviour
         player.GetComponent<Player_Movement>().TakeDamage(damage);
         waiting = true;
         state = State.Idle;
-        yield return new WaitForSeconds(3.25f);
+        yield return new WaitForSeconds(timeBwAttack);
         state = State.Chasing;
         waiting = false;
         firstTimePath = true;

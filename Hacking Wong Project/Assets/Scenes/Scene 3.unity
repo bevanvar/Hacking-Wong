@@ -202,12 +202,12 @@ PrefabInstance:
     - target: {fileID: 8495491971243933094, guid: 6e6ec7937591eba418a58616b014ae49,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.52
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 8495491971243933094, guid: 6e6ec7937591eba418a58616b014ae49,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10.26
+      value: -5.75
       objectReference: {fileID: 0}
     - target: {fileID: 8495491971243933094, guid: 6e6ec7937591eba418a58616b014ae49,
         type: 3}
@@ -1872,6 +1872,12 @@ PrefabInstance:
       propertyPath: text
       value: 
       objectReference: {fileID: 592028910}
+    - target: {fileID: 3565116847824288563, guid: 903dd5c19f312eb46b4259ee95c474ab,
+        type: 3}
+      propertyPath: messageToDisplay
+      value: OH MY GOD I think the robot has kidnapped TA Marco. I must rescue him
+        quickly or else I'll end up failing this course...
+      objectReference: {fileID: 0}
     - target: {fileID: 3565116847824288564, guid: 903dd5c19f312eb46b4259ee95c474ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1880,7 +1886,7 @@ PrefabInstance:
     - target: {fileID: 3565116847824288564, guid: 903dd5c19f312eb46b4259ee95c474ab,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.22
+      value: -3.79
       objectReference: {fileID: 0}
     - target: {fileID: 3565116847824288564, guid: 903dd5c19f312eb46b4259ee95c474ab,
         type: 3}
@@ -1930,22 +1936,22 @@ PrefabInstance:
     - target: {fileID: 3565116847824288565, guid: 903dd5c19f312eb46b4259ee95c474ab,
         type: 3}
       propertyPath: m_Offset.y
-      value: -1.8384542
+      value: -2.325532
       objectReference: {fileID: 0}
     - target: {fileID: 3565116847824288565, guid: 903dd5c19f312eb46b4259ee95c474ab,
         type: 3}
       propertyPath: m_Size.y
-      value: 3.6086826
+      value: 1.926054
       objectReference: {fileID: 0}
     - target: {fileID: 3565116847824288565, guid: 903dd5c19f312eb46b4259ee95c474ab,
         type: 3}
       propertyPath: m_Offset.x
-      value: 0.41148353
+      value: 0.23439837
       objectReference: {fileID: 0}
     - target: {fileID: 3565116847824288565, guid: 903dd5c19f312eb46b4259ee95c474ab,
         type: 3}
       propertyPath: m_Size.x
-      value: 5.15653
+      value: 3.031509
       objectReference: {fileID: 0}
     - target: {fileID: 3565116847824288566, guid: 903dd5c19f312eb46b4259ee95c474ab,
         type: 3}
