@@ -5922,6 +5922,10 @@ PrefabInstance:
       propertyPath: delayDestroy
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 2136631673, guid: 60cf1baff2c507940baa769d36d5ffaf, type: 3}
+      propertyPath: maxHealth
+      value: 1400
+      objectReference: {fileID: 0}
     - target: {fileID: 5826950899522458902, guid: 60cf1baff2c507940baa769d36d5ffaf,
         type: 3}
       propertyPath: m_Name

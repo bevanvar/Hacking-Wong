@@ -14,14 +14,21 @@ public class DialogueShow : MonoBehaviour
         DialogueCanvas = GameObject.Find("Dialogue");
         DialogueCanvas.SetActive(true);
         text.text = messageToDisplay;
+        StartCoroutine(RemoveDialogue());
+    }
+
+    IEnumerator RemoveDialogue()
+    {
+        yield return new WaitForSeconds(2.5f);
+        DialogueCanvas.SetActive(false);
     }
 
     //private void OnTriggerEnter2D(Collider2D collision)
     //{
-        //if (collision.tag == "Player")
-        //{
-            //DialogueCanvas.SetActive(true);
-        //}
+    //if (collision.tag == "Player")
+    //{
+    //DialogueCanvas.SetActive(true);
+    //}
     //}
 
     private void OnTriggerExit2D(Collider2D collision)
