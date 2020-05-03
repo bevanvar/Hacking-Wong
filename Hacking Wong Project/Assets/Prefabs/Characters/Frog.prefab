@@ -142,10 +142,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   rb: {fileID: 9008559427334010611}
-  nextWaypointDistance: 3
+  nextWaypointDistance: 2
   anim: {fileID: 9008559427334010612}
   chaseRange: 16
-  attackRange: 2
+  attackRange: 3
   explosionRadius: 4
   damage: 40
   layerMask:
@@ -169,7 +169,6 @@ MonoBehaviour:
   anim: {fileID: 9008559427334010612}
   deathAnimTimeInSeconds: 0.778
   healthBar: {fileID: 0}
-  enemyHit: {fileID: -2709017062248417068}
 --- !u!58 &9214371774039811505
 CircleCollider2D:
   m_ObjectHideFlags: 0
