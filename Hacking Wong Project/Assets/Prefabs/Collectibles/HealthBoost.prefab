@@ -113,3 +113,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBonus: 50
+  healthValues: {fileID: 0}
+  potionCollect: {fileID: 8300000, guid: 008995373597c604e868615d767be6a7, type: 3}

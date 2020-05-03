@@ -23,6 +23,8 @@ public class Dragon_Movement : MonoBehaviour
     public GameObject firePrefab;
     public float force = 10f;
 
+    public AudioSource breath;
+
     private enum State
     {
         Idle,
@@ -175,6 +177,7 @@ public class Dragon_Movement : MonoBehaviour
     private void Shoot()
     {
         anim.SetTrigger("shoot");
+        breath.Play();
         Vector2 shootDirection = (Vector2)target.position - rb.position;
         float angle = Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg;
         GameObject fireProjectile = Instantiate(firePrefab, shootPoint.position, Quaternion.Euler(0, 0, angle));
