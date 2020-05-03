@@ -27,6 +27,8 @@ public class Frog_Movement : MonoBehaviour
     public LayerMask layerMask;
     public Collider2D selfCollider;
 
+    public AudioSource explosion;
+
     private enum State
     {
         Idle,
@@ -124,6 +126,7 @@ public class Frog_Movement : MonoBehaviour
 
     private void Explode()
     {
+        explosion.Play();
         firstTimePath = true; //to prevent multiple explosions (since animation lasts longer than one frame
         selfCollider.enabled = false; //unneccesary for boar
         //stop moving

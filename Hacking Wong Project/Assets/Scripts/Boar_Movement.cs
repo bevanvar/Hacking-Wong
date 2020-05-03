@@ -24,6 +24,7 @@ public class Boar_Movement : MonoBehaviour
     public GameObject attackAnim;
     public float damage;
     private GameObject player;
+    public AudioSource shock;
 
     private enum State
     {
@@ -101,6 +102,7 @@ public class Boar_Movement : MonoBehaviour
 
     IEnumerator Attack()
     {
+        shock.Play();
         GameObject clone = (GameObject) Instantiate(attackAnim, new Vector3((target.position.x + rb.position.x) / 2, (target.position.y + rb.position.y) / 2, 2), Quaternion.identity);
         Destroy(clone, 1.0f);
         player.GetComponent<Player_Movement>().TakeDamage(damage);

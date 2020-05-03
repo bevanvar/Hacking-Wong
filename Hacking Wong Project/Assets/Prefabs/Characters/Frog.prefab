@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 9008559426461274162}
   - component: {fileID: 9214371774039811505}
   - component: {fileID: 2123715135}
-  - component: {fileID: 8886969886072669598}
+  - component: {fileID: -2709017062248417068}
   m_Layer: 8
   m_Name: Frog
   m_TagString: Enemy
@@ -152,6 +152,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1280
   selfCollider: {fileID: 9214371774039811505}
+  explosion: {fileID: -2709017062248417068}
 --- !u!114 &9008559426461274162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,7 +169,7 @@ MonoBehaviour:
   anim: {fileID: 9008559427334010612}
   deathAnimTimeInSeconds: 0.778
   healthBar: {fileID: 0}
-  enemyHit: {fileID: 8886969886072669598}
+  enemyHit: {fileID: -2709017062248417068}
 --- !u!58 &9214371774039811505
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -213,7 +214,7 @@ MonoBehaviour:
   tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   graphMask:
     value: -1
---- !u!82 &8886969886072669598
+--- !u!82 &-2709017062248417068
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -223,9 +224,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: afae48ced6b8c3140aeeb852a45bc259, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8e1eb72e3e3132c408a0cd8406029a69, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.75
   m_Pitch: 1
   Loop: 0
   Mute: 0
