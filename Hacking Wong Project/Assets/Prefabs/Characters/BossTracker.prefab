@@ -182,6 +182,7 @@ MonoBehaviour:
   damage: 10
   explosion: {fileID: 4461865916477021667, guid: 6ec655e8606589a408b718f31c77b0e0,
     type: 3}
+  playerHit: {fileID: 8300000, guid: 821c94ccd205ec54f96131d73e46606e, type: 3}
 --- !u!114 &6228181788595841464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -199,6 +200,7 @@ MonoBehaviour:
   damage: 10
   explosion: {fileID: 4461865916477021667, guid: 6ec655e8606589a408b718f31c77b0e0,
     type: 3}
+  playerHit: {fileID: 0}
 --- !u!82 &-1990068288830345883
 AudioSource:
   m_ObjectHideFlags: 0

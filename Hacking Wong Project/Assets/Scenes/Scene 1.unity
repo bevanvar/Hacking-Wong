@@ -4481,6 +4481,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MusicScene
       objectReference: {fileID: 0}
+    - target: {fileID: 7100833900454567276, guid: 8594d3378c0c78b448b586efb2d09b36,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8594d3378c0c78b448b586efb2d09b36, type: 3}
 --- !u!1001 &1183962150

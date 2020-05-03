@@ -8,6 +8,7 @@ public class Dragon_Fire : MonoBehaviour
 {
     public float damage;
     public GameObject explosion;
+    public AudioClip playerHit;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +23,7 @@ public class Dragon_Fire : MonoBehaviour
         }
         if(other.tag == "Player")
         {
+            AudioSource.PlayClipAtPoint(playerHit, Camera.main.transform.position);
             other.GetComponent<Player_Movement>().TakeDamage(damage);
             Destroy(Instantiate(explosion, other.transform.position, Quaternion.identity), 0.65f);
         }

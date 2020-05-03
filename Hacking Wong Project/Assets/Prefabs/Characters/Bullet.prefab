@@ -147,6 +147,7 @@ MonoBehaviour:
   explosionEffect: {fileID: 4554492944463413487, guid: 3e47ce60665b2664da646f6dcab8b15d,
     type: 3}
   bulletDamage: 20
+  enemyHit: {fileID: 8300000, guid: 0a8ca7627f2021c4195ab4fdcf0470d3, type: 3}
 --- !u!82 &-6502914139888650784
 AudioSource:
   m_ObjectHideFlags: 0

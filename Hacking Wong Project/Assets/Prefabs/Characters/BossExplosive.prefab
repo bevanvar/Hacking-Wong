@@ -149,6 +149,7 @@ MonoBehaviour:
   damage: 25
   explosion: {fileID: 4461865916477021667, guid: 6ec655e8606589a408b718f31c77b0e0,
     type: 3}
+  playerHit: {fileID: 8300000, guid: 821c94ccd205ec54f96131d73e46606e, type: 3}
 --- !u!95 &6764850152054161897
 Animator:
   serializedVersion: 3

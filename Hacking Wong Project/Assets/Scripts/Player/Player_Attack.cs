@@ -11,6 +11,7 @@ public class Player_Attack : MonoBehaviour
     public float attackDamage;
     public LayerMask enemyLayer;
     public AudioSource swordSwing;
+    public AudioSource swordHit;
 
     void Update()
     {
@@ -37,9 +38,11 @@ public class Player_Attack : MonoBehaviour
         {
             if(enemy.gameObject.tag == "Enemy")
             {
+                swordHit.Play();
                 enemy.GetComponent<Take_Damage>().DamageTaken(attackDamage);
             } else if(enemy.gameObject.tag == "Boss")
             {
+                swordHit.Play();
                 enemy.GetComponent<BossDamage>().Damage(attackDamage);
             } else
             {

@@ -6,6 +6,7 @@ public class Bullet_Script : MonoBehaviour
 {
     public GameObject explosionEffect;
     public float bulletDamage = 20f;
+    public AudioClip enemyHit;
 
     private void Start()
     {
@@ -20,10 +21,12 @@ public class Bullet_Script : MonoBehaviour
         }
         else if (collision.gameObject.tag == "Enemy")
         {
+            AudioSource.PlayClipAtPoint(enemyHit, Camera.main.transform.position);
             collision.gameObject.GetComponent<Take_Damage>().DamageTaken(bulletDamage);
         }
         else if (collision.gameObject.tag == "Boss")
         {
+            AudioSource.PlayClipAtPoint(enemyHit, Camera.main.transform.position);
             collision.gameObject.GetComponent<BossDamage>().Damage(bulletDamage);
         }
         Instantiate(explosionEffect, transform.position, Quaternion.identity);
