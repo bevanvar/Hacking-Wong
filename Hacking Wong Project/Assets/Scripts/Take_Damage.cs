@@ -12,6 +12,8 @@ public class Take_Damage : MonoBehaviour
     public Animator anim;
     public float deathAnimTimeInSeconds;
     public EnemyHealth healthBar;
+    public AudioSource enemyHit;
+
     void Start()
     {
         currentHealth = maxHealth;
@@ -24,6 +26,7 @@ public class Take_Damage : MonoBehaviour
 
     public void DamageTaken(float damage)
     {
+        enemyHit.Play();
         if (currentHealth>0)
         {
             currentHealth -= damage;

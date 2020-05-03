@@ -10,11 +10,13 @@ public class Player_Attack : MonoBehaviour
     public float attackRange;
     public float attackDamage;
     public LayerMask enemyLayer;
+    public AudioSource swordSwing;
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            swordSwing.Play();
             Attack();
         }         
     }

@@ -11,6 +11,7 @@ public class BossDamage : MonoBehaviour
     public Animator anim;
     public float delayDestroy = 1f;
     BossBattle bb;
+    public AudioSource bossHit;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,7 @@ public class BossDamage : MonoBehaviour
 
     public void Damage(float damage)
     {
+        bossHit.Play();
         if (currentHealth > 0)
         {
             currentHealth -= damage;
