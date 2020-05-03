@@ -12,6 +12,7 @@ public class BossBattle : MonoBehaviour
     public GameObject keyObj;
     GameObject boss;
     public GameObject explosion;
+    public AudioSource bossDeath;
 
     public void Start()
     {
@@ -19,6 +20,7 @@ public class BossBattle : MonoBehaviour
     }
     public void BossIsDead()
     {
+        bossDeath.Play();
         Instantiate(keyObj, boss.transform.position, Quaternion.identity);
     }
     public void OnKeyTouch()

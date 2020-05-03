@@ -655,6 +655,7 @@ MonoBehaviour:
   anim: {fileID: 5826950899522458901}
   delayDestroy: 1
   bossHit: {fileID: 5664137107879529629}
+  bossDeath: {fileID: 8300000, guid: 5856323d23544074d9fdde98a41bbc99, type: 3}
 --- !u!82 &5664137107879529629
 AudioSource:
   m_ObjectHideFlags: 0

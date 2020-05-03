@@ -12,6 +12,7 @@ public class BossDamage : MonoBehaviour
     public float delayDestroy = 1f;
     BossBattle bb;
     public AudioSource bossHit;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +31,7 @@ public class BossDamage : MonoBehaviour
             healthBar.SetHealth(currentHealth);
             if (currentHealth <= 0)
             {
+                
                 anim.SetTrigger("Dead");
                 anim.SetBool("isDead", true);
                 Destroy(gameObject, delayDestroy);
