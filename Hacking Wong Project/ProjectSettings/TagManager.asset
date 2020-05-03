@@ -10,6 +10,7 @@ TagManager:
   - Projectile_Enemy
   - Manager
   - Boss
+  - Music
   layers:
   - Default
   - TransparentFX
