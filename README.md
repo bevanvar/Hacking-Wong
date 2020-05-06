@@ -1,7 +1,7 @@
 # Hacking Wong
 A 2.5D rogue-like minigame for our final project for COMP3329
 
-It's 11:50PM, and you have to submit your assignment on time to avoid failing the course. In your way, stand obstacles such as shock boars, fire shooting dragons, and exploding frogs. Will you be submit your assignment on time, or fail the course?
+It's 11:50PM, and you have to submit your assignment on time to avoid failing the course. In your way stand obstacles such as shock boars, fire shooting dragons, and exploding frogs. Will you be able to submit your assignment on time or fail the course?
 
 ## Controls and Gameplay
 - Use the WASD or arrow keys to move the player around
