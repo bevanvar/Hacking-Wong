@@ -22,3 +22,7 @@ Open the Installer folder and select the _Mac_ subfolder. Inside the subfolder i
 
 ### Unity Playthrough
 On cloning the repository and opening it in Unity, go to scene titled _MainMenu_. You may **press play** there to start the game (please set aspect ratio to 16:9)
+
+
+### We hope you enjoy the game!
+## Created by Bevan, Mahima and Pranay
