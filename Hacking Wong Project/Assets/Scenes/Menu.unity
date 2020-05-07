@@ -460,6 +460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
+  intro: {fileID: 8300000, guid: 1fd0de76ec554b148aa778b6342b39ac, type: 3}
 --- !u!1 &276620376
 GameObject:
   m_ObjectHideFlags: 0
@@ -2991,7 +2992,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 271271267}
-        m_MethodName: PlayGame
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

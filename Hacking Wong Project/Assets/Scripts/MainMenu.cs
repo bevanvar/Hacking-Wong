@@ -5,7 +5,20 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public Animator anim;
-    public void PlayGame(){
+    public AudioClip intro;
+    private float timer;
+    private AudioSource bgmusic;
+
+    public void PlayGame()
+    {
+        bgmusic = GameObject.Find("Music").GetComponent<AudioSource>();
+        bgmusic.volume = 0.5f;
+        AudioSource.PlayClipAtPoint(intro, Camera.main.transform.position);
+        Invoke("Proceed", 1.5f);
+    }
+
+    public void Proceed()
+    {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
