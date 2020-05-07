@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DeathClips : MonoBehaviour
+public class ClipManager : MonoBehaviour
 {
     public AudioSource bgmusic;
     public AudioSource ChimClip;
+    public float waitTime;
 
     // Start is called before the first frame update
     void Start()
@@ -13,7 +14,7 @@ public class DeathClips : MonoBehaviour
         bgmusic.volume = 0.25f;
         bgmusic.Play();
         ChimClip.Play();
-        Invoke("Change", 3.8f);
+        Invoke("Change", waitTime);
     }
 
     void Change()

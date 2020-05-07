@@ -880,6 +880,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bgmusic: {fileID: 1002727807}
   ChimClip: {fileID: 1002727810}
+  waitTime: 3.8
 --- !u!82 &1002727810
 AudioSource:
   m_ObjectHideFlags: 0
