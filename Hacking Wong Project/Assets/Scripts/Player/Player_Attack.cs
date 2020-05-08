@@ -44,9 +44,6 @@ public class Player_Attack : MonoBehaviour
             {
                 swordHit.Play();
                 enemy.GetComponent<BossDamage>().Damage(attackDamage);
-            } else
-            {
-                Destroy(enemy);
             }
         }
     }
